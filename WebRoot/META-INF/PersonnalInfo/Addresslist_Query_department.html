@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>通讯录查询结果</title>
+<link  rel="stylesheet" type="text/css" href="../css/style.css";/>
+<script language="javascript" src="../js/jquery.js"></script>
+<script language="javascript" src="../js/DemoData.js" charset="utf-8"></script>
+<script language="javascript" src="../js/DataShowManager.js" charset="utf-8"></script>
+<script language="javascript" src="../js/PagecCommon.js" charset="utf-8"></script>
+<script language="javascript" src="../js/popwindow.js" charset="utf-8"></script>
+ 
+</head>
+<body>
+<form action="">
+<div class="head"><div class="head_title"><h1><img src="../img/item_point.png" />个人信息
+		<img src="../img/item_point.png" />人事部门所属员工通讯录</h1></div></div>
+   
+<div class="content3">
+     
+  <div class="ItemBlockBorder3">
+  <div class="ItemBlock3">
+	<table cellspacing="0" cellpadding="0" class="datetable2">
+        <!-- 表头-->
+        <thead>
+            <tr align="center" valign="MIDDLE" id="TableTitle">
+				<td>员工号</td>
+				<td>姓名</td>
+				<td>手机号码</td>
+				<td>电子邮件</td>
+				<td>家庭号码</td>
+				<td>公司号码</td>
+				<td >通讯地址</td>
+				<td>邮编</td>
+			</tr>
+		</thead>		
+		<!--显示数据列表-->
+        <tbody id="TableData" class="dataContainer" datakey="Addresslist_List">
+			<tr class="TableDetail1 template">
+				<td>${Addresslist.workeNum}</td>
+				<td>${Addresslist.workername}</td>
+				<td>${Addresslist.cell-phoneNum}</td>
+				<td>${Addresslist.E-mail}</td>
+				<td>${Addresslist.HomeTelNum}</td>
+				<td>${Addresslist.CompanyTelNum}</td>
+				<td>${Addresslist.address}</td>
+				<td>${Addresslist.ZipCode}</td>
+			</tr>
+        </tbody>
+    </table>
+  </div>
+  </div> 
+<!--分页信息-->
+<div id="PageSelectorBar">
+	<div id="PageSelectorMemo">
+		页次：1/12页 &nbsp;
+		每页显示：8条 &nbsp;
+		总记录数：92条
+	</div>
+	<div id="PageSelectorSelectorArea">
+		<img src="../img/pageSelectorImg/firstPage.jpg"/>		
+		<span class="PageSelectorNum PageSelectorSelected" style="cursor: hand;" onClick="gotoPageNum(2);">1</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">2</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">3</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">4</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">5</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">6</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">7</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">8</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">9</span>
+		<span class="PageSelectorNum" style="cursor: hand;" onClick="gotoPageNum(2);">10</span>		
+		<img src="../img/pageSelectorImg/lastPage.jpg"/>
+		<input type="button" id="button_new"  value="返 回" onclick="javascript:history.back()"/>
+	</div>
+</div>		 
+</div>
+
+ 
+</form>
+</body>
+</html>

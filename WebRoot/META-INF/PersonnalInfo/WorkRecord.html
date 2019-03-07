@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>填写工作记录</title>
+<link  rel="stylesheet" type="text/css" href="../css/style.css";/>
+<script  type="text/javascript" src="../js/calendar/WdatePicker.js"></script>
+<script>
+window.onload = function()
+{
+	var dd = new Date();
+	var mon = dd.getUTCMonth()+1;
+        if(mon < 10)
+            mon = "0"+mon;
+	var year = dd.getUTCFullYear();
+	var day = dd.getUTCDate();
+	document.getElementById("dateShow").value = year+"-"+mon+"-"+day;
+}
+</script>
+</head>
+<body>
+<form action="">
+<div class="head"><div class="head_title"><h1><img src="../img/item_point.png" />个人信息
+		<img src="../img/item_point.png" />填写工作记录</h1></div></div>
+ 
+<div class="content2">
+  <div class="ItemBlockBorder2">
+	<div class="ItemBlock2">
+	<table class="formtable">
+            <tr>
+				<th width="11%">员&nbsp;工&nbsp;号</th>
+				<td width="89%"><input name="" type="text" class="button30" value="AD20060004" readonly="ture"/></td>
+			</tr>
+			<tr>
+				<th>日期</th>
+				<td>
+				<input type="text"  class="button33"  id="dateShow" value=""/>
+				<img onClick="WdatePicker({el: 'dateShow' })" src="../img/datePicker.jpg" align="absmiddle" style="cursor:pointer" />
+				<!--<input type="text"  class="button33"  onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'});"/>-->
+				</td>
+			</tr>
+			<tr >
+				<th >工作情况</th>
+				<td ><textarea name="" class="textarea" rows="8" ></textarea></td>
+			</tr>		
+    </table>
+	</div>
+ 
+  <table align="center" width="100%" class="bottomback">
+	  <tr>
+	      <td align="center">
+		       <input type="button" id="button_new"  value="提 交" onclick=""/>
+			   <input type="reset" id="button_new"  value="重 置" onclick=""/>
+         </td>
+	  </tr>   
+  </table> 
+  </div> 	
+</div>
+ 
+</form>
+</body>
+</html>
