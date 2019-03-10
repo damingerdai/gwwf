@@ -8,7 +8,7 @@ import com.sun.demo.office.dao.IOfficeDAO;
 import com.sun.demo.office.dao.impl.OfficeDAO;
 import com.sun.demo.office.service.IOfficeService;
 /**
- * 办公用品所需的后台服务实现类
+ * 鍔炲叕鐢ㄥ搧鎵�闇�鐨勫悗鍙版湇鍔″疄鐜扮被
  * @author daming
  *
  */

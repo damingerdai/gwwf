@@ -23,18 +23,18 @@ import com.sun.demo.personaladmin.service.IPersonAdminService;
 import com.sun.demo.personaladmin.service.impl.PersonAdminService;
 import com.sun.demo.web.Page;
 /**
- * ÈËÊÂ¹ÜÀíÄ£¿éµÄServlet
+ * äººäº‹ç®¡ç†æ¨¡å—çš„Servlet
  * @author daming
  *
  */
 public class PersonAdminServlet extends HttpServlet {
 	/**
-	 * ÈËÊÂ¹ÜÀíºóÌ¨·şÎñ
+	 * äººäº‹ç®¡ç†åå°æœåŠ¡
 	 */
 	private IPersonAdminService pService = new PersonAdminService();
 
 	/**
-	 * doGet·½·¨
+	 * doGetæ–¹æ³•
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -42,7 +42,7 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * doPost·½·¨
+	 * doPostæ–¹æ³•
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -59,11 +59,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * Ôö¼ÓĞÂÔ±¹¤
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * å¢åŠ æ–°å‘˜å·¥
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void addEmployee(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -74,9 +74,9 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * Í¨¹ıÇ°¶ËrequestÀ´»ñµÃemployee¶ÔÏó
-	 * @param request £ºÇëÇó
-	 * @return Ô±¹¤ĞÅÏ¢
+	 * é€šè¿‡å‰ç«¯requestæ¥è·å¾—employeeå¯¹è±¡
+	 * @param request ï¼šè¯·æ±‚
+	 * @return å‘˜å·¥ä¿¡æ¯
 	 */
 	private Employee getEmpByRequest(HttpServletRequest request) {
 		String empid = request.getParameter("empid").trim();
@@ -93,11 +93,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅµÄÇ°²¿·Ö»ñµÃËùÓĞ¿ÉÄÜµÄÔ±¹¤±àºÅ 
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ ¹æ®å‘˜å·¥ç¼–å·çš„å‰éƒ¨åˆ†è·å¾—æ‰€æœ‰å¯èƒ½çš„å‘˜å·¥ç¼–å· 
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchEmpId(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -113,11 +113,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ²éÕÒÔ±¹¤
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ ¹æ®å‘˜å·¥ç¼–å·æŸ¥æ‰¾å‘˜å·¥
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchEmployee(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -133,11 +133,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸üĞÂÔ±¹¤µÄĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ›´æ–°å‘˜å·¥çš„ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void updateEmployee(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -167,11 +167,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * Ìí¼ÓĞÂµÄ²¿ÃÅ
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ·»åŠ æ–°çš„éƒ¨é—¨
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void addDepartment(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -184,11 +184,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸ù¾İ²¿ÃÅ±àºÅ²éÕÒÊÇ·ñ´æÔÚ¸Ã²¿ÃÅ
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ ¹æ®éƒ¨é—¨ç¼–å·æŸ¥æ‰¾æ˜¯å¦å­˜åœ¨è¯¥éƒ¨é—¨
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchDepartment(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -202,11 +202,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * »ñµÃËùÓĞµÄ²¿ÃÅ
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—æ‰€æœ‰çš„éƒ¨é—¨
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getDepartment(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -218,11 +218,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸üĞÂ²¿ÃÅĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ›´æ–°éƒ¨é—¨ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void updateDepartment(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -233,11 +233,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ĞÂÔöÔ±¹¤µÄ¿¼ÇÚ¼ÇÂ¼
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ–°å¢å‘˜å·¥çš„è€ƒå‹¤è®°å½•
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void addAttendance(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -253,9 +253,9 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸ù¾İÇëÇó»ñµÃÒ»Ìõ¿¼ÇÚ¼ÇÂ¼
-	 * @param request £ºÇëÇó
-	 * @return ¿¼ÇÚ¼ÇÂ¼
+	 * æ ¹æ®è¯·æ±‚è·å¾—ä¸€æ¡è€ƒå‹¤è®°å½•
+	 * @param request ï¼šè¯·æ±‚
+	 * @return è€ƒå‹¤è®°å½•
 	 */
 	private AttendanceRecord getAttendRecByReq(HttpServletRequest request) {
 		String empid = request.getParameter("empid");
@@ -273,11 +273,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * »ñµÃÈ«²¿µÄ¿¼ÇÚ¼ÇÂ¼
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—å…¨éƒ¨çš„è€ƒå‹¤è®°å½•
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getAttendanceRecord(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -297,11 +297,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ»ñµÃÔ±¹¤ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ ¹æ®å‘˜å·¥ç¼–å·è·å¾—å‘˜å·¥ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getEmployeeByEmpId(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -326,11 +326,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * ĞÂÔöÔ±¹¤ĞÅÏ¢Ê±ÉèÖÃÄ¬ÈÏµÄÔ±¹¤±àºÅ
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ–°å¢å‘˜å·¥ä¿¡æ¯æ—¶è®¾ç½®é»˜è®¤çš„å‘˜å·¥ç¼–å·
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void setDefaultAddPersonInfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -341,11 +341,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 	
 	/**
-	 * Îª°ì¹«ÓÃÆ·Ä£¿éÌá¹©²¿ÃÅĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * ä¸ºåŠå…¬ç”¨å“æ¨¡å—æä¾›éƒ¨é—¨ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getDepartmentByOffice(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -358,11 +358,11 @@ public class PersonAdminServlet extends HttpServlet {
 	}
 
 	/**
-	 * Îª°ì¹«ÓÃÆ·Ä£¿éÌá¹©Ô±¹¤ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * ä¸ºåŠå…¬ç”¨å“æ¨¡å—æä¾›å‘˜å·¥ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getEmployeeByOffice(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {

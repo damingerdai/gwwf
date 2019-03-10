@@ -4,39 +4,39 @@ import com.sun.demo.bean.User;
 import com.sun.demo.domain.Employee;
 
 /**
- *  ÓÃ»§µÇÂ¼£¬ÍË³öÊ±ËùĞèµÄºóÌ¨·şÎñ
+ *  ç”¨æˆ·ç™»å½•ï¼Œé€€å‡ºæ—¶æ‰€éœ€çš„åå°æœåŠ¡
  * @author daming
  *
  */
 public interface ILoginService {
 	
 	/**
-	 * ¼ì²é¸ÃÓÃ»§ÊÇ·ñ´æÔÚ
-	 * empid_error £ºÔ±¹¤±àºÅ´íÎó
-	 * password_error£ºÃÜÂë´íÎó
+	 * æ£€æŸ¥è¯¥ç”¨æˆ·æ˜¯å¦å­˜åœ¨
+	 * empid_error ï¼šå‘˜å·¥ç¼–å·é”™è¯¯
+	 * password_errorï¼šå¯†ç é”™è¯¯
 	 * @param user
-	 * @return ´íÎóÀàĞÍ
+	 * @return é”™è¯¯ç±»å‹
 	 */
 	String checkUser(User user);
 	
 	/**
-	 * ÅĞ¶Ï¸ÃÓÃ»§ÊÇ·ñ´æÔÚ
+	 * åˆ¤æ–­è¯¥ç”¨æˆ·æ˜¯å¦å­˜åœ¨
 	 * @param empid
-	 * @return ÈôÔ±¹¤´æÔÚÔò·µ»ØÔ±¹¤ĞÅÏ¢£¬ÈôÔ±¹¤²»´æÔÚÔò·µ»Ønull
+	 * @return è‹¥å‘˜å·¥å­˜åœ¨åˆ™è¿”å›å‘˜å·¥ä¿¡æ¯ï¼Œè‹¥å‘˜å·¥ä¸å­˜åœ¨åˆ™è¿”å›null
 	 */
 	Employee searchEmployee(String empId);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ»ñµÃÔ±¹¤Ãû;
+	 * æ ¹æ®å‘˜å·¥ç¼–å·è·å¾—å‘˜å·¥å;
 	 * @param empId
-	 * @return Ô±¹¤Ãû
+	 * @return å‘˜å·¥å
 	 */
 	String searchUsername(String empId);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ»ñµÃÔ±¹¤µÄ²¿ÃÅ±àºÅ
+	 * æ ¹æ®å‘˜å·¥ç¼–å·è·å¾—å‘˜å·¥çš„éƒ¨é—¨ç¼–å·
 	 * @param empid
-	 * @return Ô±¹¤ËùÔÚ²¿ÃÅµÄ²¿ÃÅ ±àºÅ
+	 * @return å‘˜å·¥æ‰€åœ¨éƒ¨é—¨çš„éƒ¨é—¨ ç¼–å·
 	 */
 	String searchDepId(String empid);
 }

@@ -2,40 +2,40 @@ package com.sun.demo.web;
 
 import java.util.List;
 /**
- * ·ÖÒ³¹¦ÄÜ´¦Àí
+ * åˆ†é¡µåŠŸèƒ½å¤„ç†
  * @author daming
  *
- * @param <T> Ò³ÃæÉÏËùÒªÕ¹Ê¾ĞÅÏ¢
+ * @param <T> é¡µé¢ä¸Šæ‰€è¦å±•ç¤ºä¿¡æ¯
  */
 public class Page<T> {
 	/**
-	 * Ö¸¶¨Ò³Ãæ
+	 * æŒ‡å®šé¡µé¢
 	 */
 	private int pageNo;
 	/**
-	 * µ±Ç°Ò³µÄĞÅÏ¢¼¯ºÏ
+	 * å½“å‰é¡µçš„ä¿¡æ¯é›†åˆ
 	 */
 	private List<T> list;
 	/**
-	 * Ã¿Ò³ÏÔÊ¾ĞÅÏ¢ÊıÁ¿
+	 * æ¯é¡µæ˜¾ç¤ºä¿¡æ¯æ•°é‡
 	 */
 	private int pageSize = 5;
 	/**
-	 * ×ÜµÄÒ³ÃæÊı
+	 * æ€»çš„é¡µé¢æ•°
 	 */
 	private long totalItemNumber;
 	/**
-	 * PageµÄ¹¹Ôì·½·¨
-	 * @param pageNo Ö¸¶¨Ò³Ãæ
+	 * Pageçš„æ„é€ æ–¹æ³•
+	 * @param pageNo æŒ‡å®šé¡µé¢
 	 */
 	public Page(int pageNo)
 	{
 		this.pageNo = pageNo;
 	}
 	/**
-	 * pageNoµÄget·½·¨
-	 * µ±pageNo´óÓÚ×ÜµÄÒ³ÃæÊıÊ±£¬½«pageNoÉèÖÃÎª×ÜÒ³ÃæÊı
-	 * µ±pageNoĞ¡ÓÚµÈÓÚ0Ê±£¬½«pageNoÉèÖÃÎª1
+	 * pageNoçš„getæ–¹æ³•
+	 * å½“pageNoå¤§äºæ€»çš„é¡µé¢æ•°æ—¶ï¼Œå°†pageNoè®¾ç½®ä¸ºæ€»é¡µé¢æ•°
+	 * å½“pageNoå°äºç­‰äº0æ—¶ï¼Œå°†pageNoè®¾ç½®ä¸º1
 	 * @return
 	 */
 	public int getPageNo() {
@@ -51,35 +51,35 @@ public class Page<T> {
 	}
 	
 	/**
-	 * listµÄget·½·¨
+	 * listçš„getæ–¹æ³•
 	 * @return
 	 */
 	public List<T> getList() {
 		return list;
 	}
 	/**
-	 * listµÄset·½·¨
+	 * listçš„setæ–¹æ³•
 	 * @param list
 	 */
 	public void setList(List<T> list) {
 		this.list = list;
 	}
 	/**
-	 * pageSizeµÄget·½·¨
+	 * pageSizeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public int getPageSize() {
 		return pageSize;
 	}
 	/**
-	 * totalItemNumberµÄset·½·¨
+	 * totalItemNumberçš„setæ–¹æ³•
 	 * @param totalItemNumber
 	 */
 	public void setTotalItemNumber(long totalItemNumber) {
 		this.totalItemNumber = totalItemNumber;
 	}
 	/**
-	 * totalItemNumberµÄget·½·¨
+	 * totalItemNumberçš„getæ–¹æ³•
 	 * @return
 	 */
 	public long getTotalItemNumber()
@@ -88,8 +88,8 @@ public class Page<T> {
 	}
 	
 	/**
-	 * »ñµÃ×ÜÒ³Êı
-	 * @return ×ÜÒ³Êı
+	 * è·å¾—æ€»é¡µæ•°
+	 * @return æ€»é¡µæ•°
 	 */
 	public int getTotalPageNumber()
 	{
@@ -102,8 +102,8 @@ public class Page<T> {
 	}
 	
 	/**
-	 * ÅĞ¶ÏÊÇ·ñÓĞÏÂÒ»Ò³
-	 * @return ´æÔÚÏÂÒ»Ò³Ôò·µ»Øtrue£¬²»´æÔÚÏÂÒ»Ò³Ôò²»·µ»Øfalse
+	 * åˆ¤æ–­æ˜¯å¦æœ‰ä¸‹ä¸€é¡µ
+	 * @return å­˜åœ¨ä¸‹ä¸€é¡µåˆ™è¿”å›trueï¼Œä¸å­˜åœ¨ä¸‹ä¸€é¡µåˆ™ä¸è¿”å›false
 	 */
 	public boolean isHasNext()
 	{
@@ -114,8 +114,8 @@ public class Page<T> {
 		return false;
 	}
 	/**
-	 * ÅĞ¶ÏÊÇ·ñÓĞÉÏÒ»Ò³
-	 * @return ´æÔÚÉÏÒ»Ò³Ôò·µ»Øtrue£¬²»´æÔÚÉÏÒ»Ò³Ôò·µ»Øfalse
+	 * åˆ¤æ–­æ˜¯å¦æœ‰ä¸Šä¸€é¡µ
+	 * @return å­˜åœ¨ä¸Šä¸€é¡µåˆ™è¿”å›trueï¼Œä¸å­˜åœ¨ä¸Šä¸€é¡µåˆ™è¿”å›false
 	 */
 	public boolean isHasPrev()
 	{
@@ -126,8 +126,8 @@ public class Page<T> {
 		return false;
 	}
 	/**
-	 * »ñµÃÏÂÒ»Ò³
-	 * @return ÏÂÒ»Ò³
+	 * è·å¾—ä¸‹ä¸€é¡µ
+	 * @return ä¸‹ä¸€é¡µ
 	 */
 	public int getPrevPage()
 	{
@@ -138,8 +138,8 @@ public class Page<T> {
 		return getPageNo();
 	}
 	/**
-	 * »ñµÃÉÏÒ»Ò³
-	 * @return ÉÏÒ»Ò³
+	 * è·å¾—ä¸Šä¸€é¡µ
+	 * @return ä¸Šä¸€é¡µ
 	 */
 	public int getNextPage()
 	{
@@ -151,7 +151,7 @@ public class Page<T> {
 	}
 	
 	/**
-	 * PageµÄtoString·½·¨
+	 * Pageçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

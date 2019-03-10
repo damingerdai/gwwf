@@ -4,52 +4,52 @@ import java.util.List;
 
 import com.sun.demo.bean.OfficeStationery;
 /**
- * °ì¹«ÓÃÆ·Ïà¹ØµÄDAO½Ó¿Ú
+ * åŠå…¬ç”¨å“ç›¸å…³çš„DAOæ¥å£
  * @author daming
  *
  */
 public interface IOfficeDAO {
 	/**
-	 * »ñµÃ°ì¹«ÓÃÆ·µÄÈ«²¿ĞÅÏ¢
-	 * @return £ºÀàĞÍÎªOfficeStationeryµÄ¼¯ºÏ£¬´æ·Å×Å°ì¹«ÓÃÆ·µÄĞÅÏ¢
+	 * è·å¾—åŠå…¬ç”¨å“çš„å…¨éƒ¨ä¿¡æ¯
+	 * @return ï¼šç±»å‹ä¸ºOfficeStationeryçš„é›†åˆï¼Œå­˜æ”¾ç€åŠå…¬ç”¨å“çš„ä¿¡æ¯
 	 */
 	List<OfficeStationery> getOffice();
 	
 	/**
-	 * ¸üĞÂÖ¸¶¨Ô±¹¤Ê¹ÓÃ°ì¹«ÓÃÆ·µÄÇé¿ö
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @param list £º°ì¹«ÓÃÆ·µÄ¼¯ºÏ
+	 * æ›´æ–°æŒ‡å®šå‘˜å·¥ä½¿ç”¨åŠå…¬ç”¨å“çš„æƒ…å†µ
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @param list ï¼šåŠå…¬ç”¨å“çš„é›†åˆ
 	 */
 	void updateOfficeUsage(String empid, List<OfficeStationery> list);
 	
 	/**
-	 *  »ñµÃ¸ÃÔ±¹¤µÄ°ì¹«ÓÃÆ·Ê¹ÓÃĞÅÏ¢
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @param off £º°ì¹«ÓÃÆ·
-	 * @return ture±íÊ¾Ö¸¶¨Ô±¹¤´æÔÚÖ¸¶¨°ì¹«ÓÃÆ·µÄÇé¿ö£¬false±íÊ¾Ö¸¶¨Ô±¹¤²»´æÔÚÖ¸¶¨°ì¹«ÓÃÆ·µÄÇé¿ö
+	 *  è·å¾—è¯¥å‘˜å·¥çš„åŠå…¬ç”¨å“ä½¿ç”¨ä¿¡æ¯
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @param off ï¼šåŠå…¬ç”¨å“
+	 * @return tureè¡¨ç¤ºæŒ‡å®šå‘˜å·¥å­˜åœ¨æŒ‡å®šåŠå…¬ç”¨å“çš„æƒ…å†µï¼Œfalseè¡¨ç¤ºæŒ‡å®šå‘˜å·¥ä¸å­˜åœ¨æŒ‡å®šåŠå…¬ç”¨å“çš„æƒ…å†µ
 	 */
 	boolean getOfficeUsageInfo(String empid,OfficeStationery off);
 	
 	/**
-	 * ¸üĞÂ°ì¹«ÓÃÆ·µÄÇé¿ö
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @param updateList £ºÖ´ĞĞ¸üĞÂ²¿·ÖµÄ°ì¹«ÓÃÆ·µÄ¼¯ºÏ
-	 * @param insertList £ºÖ´ĞĞ²åÈë²¿·ÖµÄ°ì¹«ÓÃÆ·µÄ¼¯ºÏ
+	 * æ›´æ–°åŠå…¬ç”¨å“çš„æƒ…å†µ
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @param updateList ï¼šæ‰§è¡Œæ›´æ–°éƒ¨åˆ†çš„åŠå…¬ç”¨å“çš„é›†åˆ
+	 * @param insertList ï¼šæ‰§è¡Œæ’å…¥éƒ¨åˆ†çš„åŠå…¬ç”¨å“çš„é›†åˆ
 	 */
 	void updateOfficeUsageInfo(String empid,List<OfficeStationery> updateList,List<OfficeStationery> insertList);
 	
 	/**
-	 * ÅĞ¶Ï¸Ã°ì¹«ÓÃÆ·ÊÇ·ñÒÑ¾­´æÔÚ
-	 * @param uname £º°ì¹«ÓÃÆ·µÄÃû³Æ
-	 * @param unit £º°ì¹«ÓÃÆ·µÄµ¥Î»
-	 * @return true:±íÊ¾´æÔÚ£¬false£º±íÊ¾²»´æÔÚ
+	 * åˆ¤æ–­è¯¥åŠå…¬ç”¨å“æ˜¯å¦å·²ç»å­˜åœ¨
+	 * @param uname ï¼šåŠå…¬ç”¨å“çš„åç§°
+	 * @param unit ï¼šåŠå…¬ç”¨å“çš„å•ä½
+	 * @return true:è¡¨ç¤ºå­˜åœ¨ï¼Œfalseï¼šè¡¨ç¤ºä¸å­˜åœ¨
 	 */
 	boolean checkOfficeStationery(String uname,String unit);
 	
 	/**
-	 * ¸üĞÂ°ì¹«ÓÃÆ·µÄ¿â´æµÄĞÅÏ¢
-	 * @param updateList £ºÖ´ĞĞ¸üĞÂ²¿·ÖµÄ°ì¹«ÓÃÆ·µÄ¼¯ºÏ
-	 * @param insertList £ºÖ´ĞĞ²åÈë²¿·ÖµÄ°ì¹«ÓÃÆ·µÄ¼¯ºÏ
+	 * æ›´æ–°åŠå…¬ç”¨å“çš„åº“å­˜çš„ä¿¡æ¯
+	 * @param updateList ï¼šæ‰§è¡Œæ›´æ–°éƒ¨åˆ†çš„åŠå…¬ç”¨å“çš„é›†åˆ
+	 * @param insertList ï¼šæ‰§è¡Œæ’å…¥éƒ¨åˆ†çš„åŠå…¬ç”¨å“çš„é›†åˆ
 	 */
 	void updateOfficeStationery(List<OfficeStationery> updateList,List<OfficeStationery> insertList);
 }

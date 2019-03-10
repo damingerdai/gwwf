@@ -1,4 +1,4 @@
-﻿package com.sun.demo.login.servlet;
+package com.sun.demo.login.servlet;
 
 import java.io.IOException;
 import java.lang.reflect.Method;

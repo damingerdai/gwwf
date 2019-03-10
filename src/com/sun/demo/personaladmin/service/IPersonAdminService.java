@@ -8,140 +8,140 @@ import com.sun.demo.domain.Employee;
 import com.sun.demo.web.Page;
 
 /**
- * Ô±¹¤ÈËÊÂ¹ÜÀíµÄ½Ó¿Ú£¬ÓÃÓÚ·â×°Ôö¼ÓºÍĞŞ¸ÄÔ±¹¤ĞÅÏ¢µÈ²Ù×÷
+ * å‘˜å·¥äººäº‹ç®¡ç†çš„æ¥å£ï¼Œç”¨äºå°è£…å¢åŠ å’Œä¿®æ”¹å‘˜å·¥ä¿¡æ¯ç­‰æ“ä½œ
  * @author daming
  * 
  */
 public interface IPersonAdminService {
 	/**
-	 * ¸ù¾İempidPartµÄÖµÀ´»ñµÃËùÓĞÒÔempidPartÎª¿ªÍ·µÄÔ±¹¤±àºÅ
-	 * @param empidPart   £ºÓÃ»§ÒÑ¾­ÊäÈëµÄempidµÄÒ»²¿·Ö
-	 * @return ËùÓĞÂú×ãÌõ¼şµÄempidµÄ¼¯ºÏ
+	 * æ ¹æ®empidPartçš„å€¼æ¥è·å¾—æ‰€æœ‰ä»¥empidPartä¸ºå¼€å¤´çš„å‘˜å·¥ç¼–å·
+	 * @param empidPart   ï¼šç”¨æˆ·å·²ç»è¾“å…¥çš„empidçš„ä¸€éƒ¨åˆ†
+	 * @return æ‰€æœ‰æ»¡è¶³æ¡ä»¶çš„empidçš„é›†åˆ
 	 */
 	List<String> getEmpidByEmpidPart(String empidPart);
 
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ»ñµÃÔ±¹¤ĞÅÏ¢
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @return £ºÔ±¹¤ĞÅÏ¢
+	 * æ ¹æ®å‘˜å·¥ç¼–å·è·å¾—å‘˜å·¥ä¿¡æ¯
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @return ï¼šå‘˜å·¥ä¿¡æ¯
 	 */
 	Employee getEmpById(String empid);
 	
 	/**
-	 * ·â×°Ô±¹¤
-	 * @param empid Ô±¹¤±àºÅ
-	 * @param username Ô±¹¤ĞÕÃû
-	 * @param password ÃÜÂë
-	 * @param depid ²¿ÃÅ±àºÅ
-	 * @param edu Ñ§Àú
-	 * @param college Ñ§Ğ£
-	 * @param birthday ÉúÈÕ
-	 * @param major ×¨Òµ
-	 * @param gender ĞÔ±ğ
-	 * @return Ô±¹¤ĞÅÏ¢
+	 * å°è£…å‘˜å·¥
+	 * @param empid å‘˜å·¥ç¼–å·
+	 * @param username å‘˜å·¥å§“å
+	 * @param password å¯†ç 
+	 * @param depid éƒ¨é—¨ç¼–å·
+	 * @param edu å­¦å†
+	 * @param college å­¦æ ¡
+	 * @param birthday ç”Ÿæ—¥
+	 * @param major ä¸“ä¸š
+	 * @param gender æ€§åˆ«
+	 * @return å‘˜å·¥ä¿¡æ¯
 	 */
 	Employee getEmp(String empid,String username,String password,String depid,String edu,String college,String birthday,String major,String gender);
 	
 	/**
-	 * Ìí¼ÓĞÂÔ±¹¤
-	 * @param emp ĞÂÔ±¹¤ĞÅÏ¢
+	 * æ·»åŠ æ–°å‘˜å·¥
+	 * @param emp æ–°å‘˜å·¥ä¿¡æ¯
 	 */
 	void addEmployee(Employee emp);
 	
 	/**
-	 * ½«¼¯ºÏ·â×°³É×Ö·û´®
-	 * @param list  ¼¯ºÏ
-	 * @return ×Ö·û´®
+	 * å°†é›†åˆå°è£…æˆå­—ç¬¦ä¸²
+	 * @param list  é›†åˆ
+	 * @return å­—ç¬¦ä¸²
 	 */
 	String setMessage(List<String> list);
 	
 	/**
-	 * ½«Ò»¸öÒÑÖªµÄÔ±¹¤ĞÅÏ¢·â×°³É×Ö·û´®
-	 * @param emp Ô±¹¤ĞÅÏ¢
-	 * @return ×Ö·û´®
+	 * å°†ä¸€ä¸ªå·²çŸ¥çš„å‘˜å·¥ä¿¡æ¯å°è£…æˆå­—ç¬¦ä¸²
+	 * @param emp å‘˜å·¥ä¿¡æ¯
+	 * @return å­—ç¬¦ä¸²
 	 */
 	String setMessage(Employee emp);
 	
 	/**
-	 * ¸üĞÂÔ±¹¤µÄĞÅÏ¢
-	 * @param emp ĞèÒª¸üĞÂµÄÔ±¹¤ĞÅÏ¢
+	 * æ›´æ–°å‘˜å·¥çš„ä¿¡æ¯
+	 * @param emp éœ€è¦æ›´æ–°çš„å‘˜å·¥ä¿¡æ¯
 	 */
 	void updateEmployee(Employee emp);
 	
 	/**
-	 * ¸ù¾İ²¿ÃÅ±àºÅÀ´ÅĞ¶Ï¸Ã²¿ÃÅÊÇ·ñ´æÔÚ
-	 * @param depid ²¿ÃÅ±àºÅ
-	 * @return Èç¹û´æÔÚÔò·µ»Ø²¿ÃÅÃû ,·ñÔò·µ»Ønull
+	 * æ ¹æ®éƒ¨é—¨ç¼–å·æ¥åˆ¤æ–­è¯¥éƒ¨é—¨æ˜¯å¦å­˜åœ¨
+	 * @param depid éƒ¨é—¨ç¼–å·
+	 * @return å¦‚æœå­˜åœ¨åˆ™è¿”å›éƒ¨é—¨å ,å¦åˆ™è¿”å›null
 	 */
 	String searchDepId(String depid);
 	
 	/**
-	 * Ìí¼ÓĞÂµÄ²¿ÃÅ
-	 * @param dep ĞÂ²¿ÃÅ
+	 * æ·»åŠ æ–°çš„éƒ¨é—¨
+	 * @param dep æ–°éƒ¨é—¨
 	 */
 	void addDepartment(Department dep);
 	
 	/**
-	 * »ñµÃÈ«²¿µÄ²¿ÃÅ
-	 * @return È«²¿²¿ÃÅĞÅÏ¢
+	 * è·å¾—å…¨éƒ¨çš„éƒ¨é—¨
+	 * @return å…¨éƒ¨éƒ¨é—¨ä¿¡æ¯
 	 */
 	List<Department> getDepartment();
 	
 	/**
-	 * ¸üĞÂ²¿ÃÅĞÅÏ¢
-	 * @param dep ĞèÒª¸üĞÂµÄ²¿ÃÅĞÅÏ¢
+	 * æ›´æ–°éƒ¨é—¨ä¿¡æ¯
+	 * @param dep éœ€è¦æ›´æ–°çš„éƒ¨é—¨ä¿¡æ¯
 	 */
 	void updateDepartment(Department dep);
 	
 	/**
-	 * ĞÂÔöÒ»Ìõ¿¼ÇÚ¼ÇÂ¼
-	 * @param ar ĞÂ¿¼ÇÚ¼ÇÂ¼ 
+	 * æ–°å¢ä¸€æ¡è€ƒå‹¤è®°å½•
+	 * @param ar æ–°è€ƒå‹¤è®°å½• 
 	 */
 	void addAttendanceRecord(AttendanceRecord ar);
 	
 	/**
-	 * ¸ù¾İ´«ÈëµÄÒ»Ìõ¿¼ÇÚ¼ÇÂ¼ÅĞ¶Ï¸ÃÌì¸ÃÔ±¹¤µÄ¿¼ÇÚ¼ÇÂ¼ÊÇ·ñ´æÔÚ
-	 * @param ar ¿¼ÇÚ¼ÇÂ¼
-	 * @return ·µ»Øtrue±íÊ¾¸Ã¿¼ÇÚ¼ÇÂ¼´æÔÚ£¬false±íÊ¾²»´æÔÚ
+	 * æ ¹æ®ä¼ å…¥çš„ä¸€æ¡è€ƒå‹¤è®°å½•åˆ¤æ–­è¯¥å¤©è¯¥å‘˜å·¥çš„è€ƒå‹¤è®°å½•æ˜¯å¦å­˜åœ¨
+	 * @param ar è€ƒå‹¤è®°å½•
+	 * @return è¿”å›trueè¡¨ç¤ºè¯¥è€ƒå‹¤è®°å½•å­˜åœ¨ï¼Œfalseè¡¨ç¤ºä¸å­˜åœ¨
 	 */
 	boolean searchAttendanceRecord(AttendanceRecord ar);
 	
 	/**
-	 * ĞŞ¸ÄÔ±¹¤µÄ¿¼ÇÚ¼ÇÂ¼
-	 * @param ar ĞèÒª¸üĞÂµÄÔ±¹¤µÄ¿¼ÇÚ¼ÇÂ¼
+	 * ä¿®æ”¹å‘˜å·¥çš„è€ƒå‹¤è®°å½•
+	 * @param ar éœ€è¦æ›´æ–°çš„å‘˜å·¥çš„è€ƒå‹¤è®°å½•
 	 */
 	void updateAttendanceRecord(AttendanceRecord ar);
 	
 	/**
-	 * »ñµÃÈ«²¿µÄ¿¼ÇÚ¼ÇÂ¼ 
-	 * @return È«²¿µÄ¿¼ÇÚ¼ÇÂ¼
+	 * è·å¾—å…¨éƒ¨çš„è€ƒå‹¤è®°å½• 
+	 * @return å…¨éƒ¨çš„è€ƒå‹¤è®°å½•
 	 */
 	List<AttendanceRecord> getAttendanceRecord();
 	
 	/**
-	 * »ñµÃÖ¸¶¨Ò³ÃæµÄ¿¼ÇÚ¼ÇÂ¼
-	 * @param pageNo Ö¸¶¨Ò³Ãæ
-	 * @return ¿¼ÇÚ¼ÇÂ¼
+	 * è·å¾—æŒ‡å®šé¡µé¢çš„è€ƒå‹¤è®°å½•
+	 * @param pageNo æŒ‡å®šé¡µé¢
+	 * @return è€ƒå‹¤è®°å½•
 	 */
 	Page<AttendanceRecord> getPage(int pageNo);
 	
 	/**
-	 * »ñµÃÄ¬ÈÏµÄĞÂÔ±¹¤±àºÅ
-	 * @return ĞÂÔ±¹¤±àºÅ
+	 * è·å¾—é»˜è®¤çš„æ–°å‘˜å·¥ç¼–å·
+	 * @return æ–°å‘˜å·¥ç¼–å·
 	 */
 	String getDefaultEmpId();
 	 
 	/**
-	 * ¸ù¾İ²¿ÃÅ±àºÅ»ñµÃ¸Ã²¿ÃÅµÄÈ«²¿Ô±¹¤ĞÅÏ¢
-	 * @param depid ²¿ÃÅ±àºÅ
-	 * @return Ö¸¶¨²¿ÃÅµÄÈ«²¿Ô±¹¤ĞÅÏ¢
+	 * æ ¹æ®éƒ¨é—¨ç¼–å·è·å¾—è¯¥éƒ¨é—¨çš„å…¨éƒ¨å‘˜å·¥ä¿¡æ¯
+	 * @param depid éƒ¨é—¨ç¼–å·
+	 * @return æŒ‡å®šéƒ¨é—¨çš„å…¨éƒ¨å‘˜å·¥ä¿¡æ¯
 	 */
 	List<Employee> getEmployeeByOffice(String depid);
 	
 	/**
-	 * ¸ù¾İ²¿ÃÅ±àºÅ»ñµÃ²¿ÃÅÃû
-	 * @param depid ²¿ÃÅ±àºÅ
-	 * @return ´æÔÚ¾Í·µ»Ø¸Ã²¿ÃÅÃû³Æ£¬²»´æÔÚÄ¬ÈÏ·µ»Ø"ĞĞÕş²¿ÃÅ"
+	 * æ ¹æ®éƒ¨é—¨ç¼–å·è·å¾—éƒ¨é—¨å
+	 * @param depid éƒ¨é—¨ç¼–å·
+	 * @return å­˜åœ¨å°±è¿”å›è¯¥éƒ¨é—¨åç§°ï¼Œä¸å­˜åœ¨é»˜è®¤è¿”å›"è¡Œæ”¿éƒ¨é—¨"
 	 */
 	String getDname(String depid);
  

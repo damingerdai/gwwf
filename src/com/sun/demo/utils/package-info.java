@@ -1,9 +1,9 @@
 /**
- *  ¹«¹²¹¤¾ß°ü
+ *  å…¬å…±å·¥å…·åŒ…
  *  <p>  
- *  <h1>¹«¹²¹¤¾ß</h1>  
+ *  <h1>å…¬å…±å·¥å…·</h1>  
  *  <p>
- *  ½«³£ÓÃµÄJDBCµÄ´¦Àí½øÐÐ·â×°
+ *  å°†å¸¸ç”¨çš„JDBCçš„å¤„ç†è¿›è¡Œå°è£…
  *  @author daming 
  *  @since JDK1.8  
  *  @version 1.0.0  

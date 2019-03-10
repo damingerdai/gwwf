@@ -13,21 +13,21 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 /**
- * ±àÂë¹ıÂËÆ÷
+ * ç¼–ç è¿‡æ»¤å™¨
  * @author daming
  *
  */
 public class EncordingFilter implements Filter {
 	/**
-	 * ±àÂë
+	 * ç¼–ç 
 	 */
 	private String encoding;
 	/**
-	 * ²ÎÊı
+	 * å‚æ•°
 	 */
 	private Map<String,String> params = new HashMap<>();
 	/**
-	 * ¹ıÂËÆ÷µÄÏú»Ù
+	 * è¿‡æ»¤å™¨çš„é”€æ¯
 	 */
 	@Override
 	public void destroy() {
@@ -35,7 +35,7 @@ public class EncordingFilter implements Filter {
 		 encoding=null;  		
 	}
 	/**
-	 * ¹ıÂËÆ÷µÄ¾ßÌå²Ù×÷
+	 * è¿‡æ»¤å™¨çš„å…·ä½“æ“ä½œ
 	 */
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
@@ -45,7 +45,7 @@ public class EncordingFilter implements Filter {
 		
 	}
 	/**
-	 * ¹ıÂËÆ÷µÄ³õÊ¼»¯
+	 * è¿‡æ»¤å™¨çš„åˆå§‹åŒ–
 	 */
 	@Override
 	public void init(FilterConfig config) throws ServletException {

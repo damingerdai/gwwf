@@ -14,14 +14,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 /**
- * ÓÃ»§ÔÚÏß×´Ì¬¼àÌıµÄ¹ıÂËÆ÷
+ * ç”¨æˆ·åœ¨çº¿çŠ¶æ€ç›‘å¬çš„è¿‡æ»¤å™¨
  * @author daming
  *
  */
 public class SessionFilter implements Filter {
 
 	/**
-	 * ¹ıÂËÆ÷µÄÏú»Ù
+	 * è¿‡æ»¤å™¨çš„é”€æ¯
 	 */
 	@Override
 	public void destroy() {
@@ -29,7 +29,7 @@ public class SessionFilter implements Filter {
 	}
 
 	/**
-	 * ¹ıÂËÆ÷µÄ¾ßÌå²Ù×÷
+	 * è¿‡æ»¤å™¨çš„å…·ä½“æ“ä½œ
 	 */
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response,
@@ -60,7 +60,7 @@ public class SessionFilter implements Filter {
 	}
 
 	/**
-	 * ¹ıÂËÆ÷µÄ³õÊ¼»¯
+	 * è¿‡æ»¤å™¨çš„åˆå§‹åŒ–
 	 */
 	@Override
 	public void init(FilterConfig config) throws ServletException {

@@ -1,127 +1,127 @@
 package com.sun.demo.bean;
 
 /**
- * ¿¼ÇÚ¼ÇÂ¼
+ * è€ƒå‹¤è®°å½•
  * @author daming
  *
  */
 public class AttendanceRecord {
 	/**
-	 * Ô±¹¤±àºÅ
+	 * å‘˜å·¥ç¼–å·
 	 */
 	private String empid;
 	/**
-	 * ÈÕÆÚ
-	 * ¸ñÊ½£ºyyyy-MM-dd
+	 * æ—¥æœŸ
+	 * æ ¼å¼ï¼šyyyy-MM-dd
 	 */
 	private String cdate;
 	/**
-	 * ÉÏ°àÊ±¼ä
-	 * ¸ñÊ½£ºHH£ºmm
+	 * ä¸Šç­æ—¶é—´
+	 * æ ¼å¼ï¼šHHï¼šmm
 	 */
 	private String ontime;
 	/**
-	 * ÏÂ°àÊ±¼ä
-	 * ¸ñÊ½£ºHH£ºmm
+	 * ä¸‹ç­æ—¶é—´
+	 * æ ¼å¼ï¼šHHï¼šmm
 	 */
 	private String offtime;
 	/**
-	 * ÉÏ°àÀàĞÍ
-	 * ·ÖÎªÉÏ°àºÍ¼Ó°àÁ½ÖÖ
+	 * ä¸Šç­ç±»å‹
+	 * åˆ†ä¸ºä¸Šç­å’ŒåŠ ç­ä¸¤ç§
 	 */
 	private String ctype;
 	/**
-	 * ±¸×¢
+	 * å¤‡æ³¨
 	 */
 	private String remark;
 	
 	/**
-	 * remarkµÄget·½·¨
+	 * remarkçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getRemark() {
 		return remark;
 	}
 	/**
-	 * remarkµÄset·½·¨
+	 * remarkçš„setæ–¹æ³•
 	 * @param remark
 	 */
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}
 	/**
-	 * empidµÄget·½·¨
+	 * empidçš„getæ–¹æ³•
 	 * @return 
 	 */
 	public String getEmpid() {
 		return empid;
 	}
 	/**
-	 * empidµÄset·½·¨
+	 * empidçš„setæ–¹æ³•
 	 * @param empid
 	 */
 	public void setEmpid(String empid) {
 		this.empid = empid;
 	}
 	/**
-	 * cdateµÄget·½·¨
+	 * cdateçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCdate() {
 		return cdate;
 	}
 	/**
-	 * cdateµÄset·½·¨
+	 * cdateçš„setæ–¹æ³•
 	 * @param cdate
 	 */
 	public void setCdate(String cdate) {
 		this.cdate = cdate;
 	}
 	/**
-	 * ontimeµÄget·½·¨
+	 * ontimeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getOntime() {
 		return ontime;
 	}
 	/**
-	 * ontimeµÄset·½·¨
+	 * ontimeçš„setæ–¹æ³•
 	 * @param ontime
 	 */
 	public void setOntime(String ontime) {
 		this.ontime = ontime;
 	}
 	/**
-	 * offtimeµÄget·½·¨
+	 * offtimeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getOfftime() {
 		return offtime;
 	}
 	/**
-	 * offtimeµÄset·½·¨
+	 * offtimeçš„setæ–¹æ³•
 	 * @param offtime
 	 */
 	public void setOfftime(String offtime) {
 		this.offtime = offtime;
 	}
 	/**
-	 * ctypeµÄget·½·¨
+	 * ctypeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCtype() {
 		return ctype;
 	}
 	/**
-	 * ctypeµÄset·½·¨
+	 * ctypeçš„setæ–¹æ³•
 	 * @param ctype
 	 */
 	public void setCtype(String ctype) {
 		this.ctype = ctype;
 	}
 	/**
-	 * AttendanceRecordµÄ¹¹Ôì·½·¨£¬
-	 * ÊµÏÖÈ«²¿µÄÊôĞÔµÄ³õÊ¼»¯
+	 * AttendanceRecordçš„æ„é€ æ–¹æ³•ï¼Œ
+	 * å®ç°å…¨éƒ¨çš„å±æ€§çš„åˆå§‹åŒ–
 	 * @param empid
 	 * @param cdate
 	 * @param ontime
@@ -138,13 +138,13 @@ public class AttendanceRecord {
 		this.ctype = ctype;
 	}
 	/**
-	 * AttendanceRecordµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * AttendanceRecordçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public AttendanceRecord() {
 		super();
 	}
 	/**
-	 * AttendanceRecordµÄtoString·½·¨
+	 * AttendanceRecordçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

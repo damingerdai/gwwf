@@ -7,123 +7,123 @@ import com.sun.demo.domain.Department;
 import com.sun.demo.domain.Employee;
 
 /**
- * ·â×°ÈËÊÂ¹ÜÀíµÄDAOÀà½Ó¿Ú
+ * å°è£…äººäº‹ç®¡ç†çš„DAOç±»æ¥å£
  * @author daming
  *
  */
 public interface IPersonAdminDAO {
 	/**
-	 * ¸ù¾İ²¿·ÖµÄempidÀ´²éÕÒºÏÊÊµÄÔ±¹¤±àºÅ
+	 * æ ¹æ®éƒ¨åˆ†çš„empidæ¥æŸ¥æ‰¾åˆé€‚çš„å‘˜å·¥ç¼–å·
 	 * @param empidPart
-	 * @return £º´æ·ÅËùÓĞ¿ÉÄÜÊÇÓÃ»§ÏëÒªµÄÔ±¹¤±àºÅµÄ¼¯ºÏ
+	 * @return ï¼šå­˜æ”¾æ‰€æœ‰å¯èƒ½æ˜¯ç”¨æˆ·æƒ³è¦çš„å‘˜å·¥ç¼–å·çš„é›†åˆ
 	 */
 	List<String> getEmpidByEmpidPart(String empidPart);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅÀ´²éÕÒÔ±¹¤
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @return £ºÈô´æÔÚÔ±¹¤ĞÅÏ¢£¬·ñÔò·µ»Ønull
+	 * æ ¹æ®å‘˜å·¥ç¼–å·æ¥æŸ¥æ‰¾å‘˜å·¥
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @return ï¼šè‹¥å­˜åœ¨å‘˜å·¥ä¿¡æ¯ï¼Œå¦åˆ™è¿”å›null
 	 */
 	Employee getEmpByEmpid(String empid);
 	
 
 	/**
-	 * ¸ù¾İdepidÀ´²éÕÒ¸Ã²¿ÃÅÊÇ·ñ´æÔÚ
+	 * æ ¹æ®depidæ¥æŸ¥æ‰¾è¯¥éƒ¨é—¨æ˜¯å¦å­˜åœ¨
 	 * @param depid
-	 * @return Èô´æÔÚ·µ»Ø²¿ÃÅÃû£¬·ñÔò·µ»Ønull
+	 * @return è‹¥å­˜åœ¨è¿”å›éƒ¨é—¨åï¼Œå¦åˆ™è¿”å›null
 	 */
 	String searchDepId(String depid);
 	
 	/**
-	 * »ñµÃÈ«²¿µÄ²¿ÃÅ
-	 * @return ·â×°²¿ÃÅĞÅÏ¢µÄ¼¯ºÏ
+	 * è·å¾—å…¨éƒ¨çš„éƒ¨é—¨
+	 * @return å°è£…éƒ¨é—¨ä¿¡æ¯çš„é›†åˆ
 	 */
 	List<Department> getDepartment();
  
 	/**
-	 * »ñµÃÖ¸¶¨Ô±¹¤ÔÚÖ¸¶¨ÈÕÆÚµÄ¿¼ÇÚ¼ÇÂ¼
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @param cdate £ºÖ¸¶¨ÈÕÆÚ
-	 * @return £º¿¼ÇÚ¼ÇÂ¼
+	 * è·å¾—æŒ‡å®šå‘˜å·¥åœ¨æŒ‡å®šæ—¥æœŸçš„è€ƒå‹¤è®°å½•
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @param cdate ï¼šæŒ‡å®šæ—¥æœŸ
+	 * @return ï¼šè€ƒå‹¤è®°å½•
 	 */
 	AttendanceRecord getAttendanceRecord(String empid,String cdate);
 	
 	/**
-	 * »ñµÃÈ«²¿µÄ¿¼ÇÚ¼ÇÂ¼
-	 * @return ¿¼ÇÚ¼ÇÂ¼µÄ¼¯ºÏ
+	 * è·å¾—å…¨éƒ¨çš„è€ƒå‹¤è®°å½•
+	 * @return è€ƒå‹¤è®°å½•çš„é›†åˆ
 	 */
 	List<AttendanceRecord> getAttendanceRecord(); 
 	
 	/**
-	 * »ñµÃÖ¸¶¨Ò³ÃæÉÏµÄ¿¼ÇÚ¼ÇÂ¼£¬ 
-	 * @param pageNo Ö¸¶¨Ò³ÃæÊı
-	 * @param pageSize Ã¿Ò³ÉÏ´æ·ÅµÄ¿¼ÇÚ¼ÇÂ¼µÄÊı
-	 * @return »ñµÃÖ¸¶¨Ô±¹¤ÔÚÖ¸¶¨ÈÕÆÚµÄ¿¼ÇÚ¼ÇÂ¼
+	 * è·å¾—æŒ‡å®šé¡µé¢ä¸Šçš„è€ƒå‹¤è®°å½•ï¼Œ 
+	 * @param pageNo æŒ‡å®šé¡µé¢æ•°
+	 * @param pageSize æ¯é¡µä¸Šå­˜æ”¾çš„è€ƒå‹¤è®°å½•çš„æ•°
+	 * @return è·å¾—æŒ‡å®šå‘˜å·¥åœ¨æŒ‡å®šæ—¥æœŸçš„è€ƒå‹¤è®°å½•
 	 */
 	List<AttendanceRecord> getAttendanceRecord(int pageNo,int pageSize);
 	 
 	/**
-	 * »ñµÃ¿¼ÇÚ¼ÇÂ¼µÄÊıÁ¿
-	 * @return ¿¼ÇÚ¼ÇÂ¼µÄÊıÁ¿
+	 * è·å¾—è€ƒå‹¤è®°å½•çš„æ•°é‡
+	 * @return è€ƒå‹¤è®°å½•çš„æ•°é‡
 	 */
 	long getAttendRecNumber();
 	
 	/**
-	 * ĞÂÔöÔ±¹¤ĞÅÏ¢
-	 * @param ĞÂÔ±¹¤µÄĞÅÏ¢
+	 * æ–°å¢å‘˜å·¥ä¿¡æ¯
+	 * @param æ–°å‘˜å·¥çš„ä¿¡æ¯
 	 */
 	void addEmployee(Employee emp);
 	
 	 
 	
 	/**
-	 * ¸üĞÂÔ±¹¤ĞÅÏ¢
-	 * @param emp £ºÔ±¹¤ĞÅÏ¢
+	 * æ›´æ–°å‘˜å·¥ä¿¡æ¯
+	 * @param emp ï¼šå‘˜å·¥ä¿¡æ¯
 	 */
 	void updateEmpoyee(Employee emp);
 	
 	/**
-	 * ĞÂÔö²¿ÃÅ
-	 * @param dep ĞÂ²¿ÃÅµÄĞÅÏ¢
+	 * æ–°å¢éƒ¨é—¨
+	 * @param dep æ–°éƒ¨é—¨çš„ä¿¡æ¯
 	 */
 	void addDepartment(Department dep);
 	
 	/**
-	 * ¸üĞÂ²¿ÃÅĞÅÏ¢
-	 * @param dep ĞèÒª¸üĞÂµÄ²¿ÃÅµÄĞÅÏ¢
+	 * æ›´æ–°éƒ¨é—¨ä¿¡æ¯
+	 * @param dep éœ€è¦æ›´æ–°çš„éƒ¨é—¨çš„ä¿¡æ¯
 	 */
 	void updateDepartment(Department dep);
 	
 	/**
-	 * ĞÂÔö¿¼ÇÚ¼ÇÂ¼
-	 * @param ar ĞÂ¿¼ÇÚ¼ÇÂ¼
+	 * æ–°å¢è€ƒå‹¤è®°å½•
+	 * @param ar æ–°è€ƒå‹¤è®°å½•
 	 */
 	void addAttendanceRecord(AttendanceRecord ar);
 	
 	/**
-	 * ¸üĞÂ¿¼ÇÚ¼ÇÂ¼ 
-	 * @param ar ĞèÒª¸üĞÂµÄ¿¼ÇÚ¼ÇÂ¼
+	 * æ›´æ–°è€ƒå‹¤è®°å½• 
+	 * @param ar éœ€è¦æ›´æ–°çš„è€ƒå‹¤è®°å½•
 	 */
 	void updateAttendanceRecor(AttendanceRecord ar);
 
 	/**
-	 * »ñµÃsequenceÖĞÖ¸¶¨×Ö¶ÎµÄµÄ×î´óÖµ
-	 * @param name Ö¸¶¨×Ö¶Î
-	 * @return ×î´óÖµ
+	 * è·å¾—sequenceä¸­æŒ‡å®šå­—æ®µçš„çš„æœ€å¤§å€¼
+	 * @param name æŒ‡å®šå­—æ®µ
+	 * @return æœ€å¤§å€¼
 	 */
 	int getMaxIndex(String name);
 	
 	/**
-	 * »ñµÃ¸Ã²¿ÃÅµÄÈ«²¿Ô±¹¤µÄĞÅÏ¢
-	 * @param depid £º²¿ÃÅ±àºÅ
-	 * @return ¸Ã²¿ÃÅµÄÈ«²¿Ô±¹¤ĞÅÏ¢
+	 * è·å¾—è¯¥éƒ¨é—¨çš„å…¨éƒ¨å‘˜å·¥çš„ä¿¡æ¯
+	 * @param depid ï¼šéƒ¨é—¨ç¼–å·
+	 * @return è¯¥éƒ¨é—¨çš„å…¨éƒ¨å‘˜å·¥ä¿¡æ¯
 	 */
 	List<Employee> getEmployeeByOffice(String depid);
 	
 	/**
-	 * ¸ù¾İ²¿ÃÅ±àºÅ»ñµÃ²¿ÃÅÃû
-	 * @param depid £º²¿ÃÅ±àºÅ
-	 * @return ²¿ÃÅÃû
+	 * æ ¹æ®éƒ¨é—¨ç¼–å·è·å¾—éƒ¨é—¨å
+	 * @param depid ï¼šéƒ¨é—¨ç¼–å·
+	 * @return éƒ¨é—¨å
 	 */
 	String getDname(String depid);
 }

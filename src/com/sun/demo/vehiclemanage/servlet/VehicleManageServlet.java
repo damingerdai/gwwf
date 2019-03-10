@@ -21,26 +21,26 @@ import com.sun.demo.vehiclemanage.service.IVehicleManageService;
 import com.sun.demo.vehiclemanage.service.impl.VehicleManageService;
 import com.sun.demo.web.Page;
 /**
- * ³µÁ¾¹ÜÀíÄ£¿éµÄServlet
+ * è½¦è¾†ç®¡ç†æ¨¡å—çš„Servlet
  * @author daming
  *
  */
 public class VehicleManageServlet extends HttpServlet {
 
 	/**
-	 * ³µÁ¾¹ÜÀíÄ£¿éµÄºóÌ¨·şÎñ
+	 * è½¦è¾†ç®¡ç†æ¨¡å—çš„åå°æœåŠ¡
 	 */
 	private IVehicleManageService vmService = new VehicleManageService();
 	
 	/**
-	 * doGet·½·¨
+	 * doGetæ–¹æ³•
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		this.doPost(request, response);
 	}
 	/**
-	 * doPost·½·¨
+	 * doPostæ–¹æ³•
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -56,11 +56,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 
 	/**
-	 * »ñµÃÈ«²¿³µÎ»ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—å…¨éƒ¨è½¦ä½ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getParkingInfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -71,11 +71,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 
 	/**
-	 * ²éÕÒÖ¸¶¨µÄ³µÎ»ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æŸ¥æ‰¾æŒ‡å®šçš„è½¦ä½ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchPark(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -92,11 +92,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ²éÕÒÖ¸¶¨³µÁ¾ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æŸ¥æ‰¾æŒ‡å®šè½¦è¾†ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchCar(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -119,11 +119,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ĞÂÔö³µÎ»ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ–°å¢è½¦ä½ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void addPark(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -136,11 +136,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * »ñµÃÈ«²¿µÄ³µÁ¾ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—å…¨éƒ¨çš„è½¦è¾†ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getCarInfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -150,11 +150,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * »ñµÃÈ«²¿µÄË¾»ú
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—å…¨éƒ¨çš„å¸æœº
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchDriver(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -168,11 +168,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ĞÂÔöÒ»¸ö³µÁ¾ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ–°å¢ä¸€ä¸ªè½¦è¾†ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void addCar(HttpServletRequest request,
 			HttpServletResponse response ) throws ServletException,IOException
@@ -197,11 +197,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ²éÕÒ¸ÃÔ±¹¤
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ ¹æ®å‘˜å·¥ç¼–å·æŸ¥æ‰¾è¯¥å‘˜å·¥
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void searchEmployee(HttpServletRequest request,
 			HttpServletResponse response ) throws ServletException,IOException
@@ -218,11 +218,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ĞÂÔöÒ»Ìõ³µÁ¾Ê¹ÓÃĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ–°å¢ä¸€æ¡è½¦è¾†ä½¿ç”¨ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void addCarUseInfo(HttpServletRequest request,
 			HttpServletResponse response ) throws ServletException,IOException
@@ -243,11 +243,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * »ñµÃÖ¸¶¨Ò³ÃæÉÏµÄ³µÁ¾Ê¹ÓÃ¼ÇÂ¼
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—æŒ‡å®šé¡µé¢ä¸Šçš„è½¦è¾†ä½¿ç”¨è®°å½•
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getCarUserinfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException,IOException
@@ -268,11 +268,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ¸üĞÂ³µÁ¾Ê¹ÓÃĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ›´æ–°è½¦è¾†ä½¿ç”¨ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void uppdateCarInfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException,IOException
@@ -296,11 +296,11 @@ public class VehicleManageServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ¸üĞÂ³µÎ»ĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ›´æ–°è½¦ä½ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void updateParking(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException,IOException

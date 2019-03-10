@@ -1,126 +1,126 @@
 package com.sun.demo.domain;
 /**
- * ³µÁ¾
+ * è½¦è¾†
  * @author daming
  *
  */
 public class Car {
 	/**
-	 * ³µÅÆºÅ
+	 * è½¦ç‰Œå·
 	 */
 	private String carId;
 	/**
-	 * ³µĞÍ
+	 * è½¦å‹
 	 */
 	private String carType;
 	/**
-	 * Ë¾»úµÄÔ±¹¤±àºÅ
+	 * å¸æœºçš„å‘˜å·¥ç¼–å·
 	 */
 	private String dirverId;
 	/**
-	 * Ê¹ÓÃµÄÀàĞÍ
+	 * ä½¿ç”¨çš„ç±»å‹
 	 */
 	private String usageType;
 	/**
-	 * ¹ºÂòÊ±¼ä
+	 * è´­ä¹°æ—¶é—´
 	 */
 	private String buyTime;
 	/**
-	 * ³µÁ¾µÄÈİÁ¿
+	 * è½¦è¾†çš„å®¹é‡
 	 */
 	private int capacity;
 	/**
-	 * ³µÁ¾ÈİÁ¿µÄµ¥Î»
+	 * è½¦è¾†å®¹é‡çš„å•ä½
 	 */
 	private String capunit;
 	/**
-	 * carIdµÄget·½·¨
+	 * carIdçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCarId() {
 		return carId;
 	}
 	/**
-	 * carIdµÄset·½·¨
+	 * carIdçš„setæ–¹æ³•
 	 * @param carId
 	 */
 	public void setCarId(String carId) {
 		this.carId = carId;
 	}
 	/**
-	 * carTypeµÄget·½·¨
+	 * carTypeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCarType() {
 		return carType;
 	}
 	/**
-	 * carTypeµÄset·½·¨
+	 * carTypeçš„setæ–¹æ³•
 	 * @param carType
 	 */
 	public void setCarType(String carType) {
 		this.carType = carType;
 	}
 	/**
-	 * dirverIdµÄget·½·¨
+	 * dirverIdçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getDirverId() {
 		return dirverId;
 	}
 	/**
-	 * dirverIdµÄset·½·¨
+	 * dirverIdçš„setæ–¹æ³•
 	 * @param dirverId
 	 */
 	public void setDirverId(String dirverId) {
 		this.dirverId = dirverId;
 	}
 	/**
-	 * usageTypeµÄget·½·¨
+	 * usageTypeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUsageType() {
 		return usageType;
 	}
 	/**
-	 * usageTypeµÄset·½·¨
+	 * usageTypeçš„setæ–¹æ³•
 	 * @param usageType
 	 */
 	public void setUsageType(String usageType) {
 		this.usageType = usageType;
 	}
 	/**
-	 * buytimeµÄget·½·¨
+	 * buytimeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getBuyTime() {
 		return buyTime;
 	}
 	/**
-	 * buytimeµÄset·½·¨
+	 * buytimeçš„setæ–¹æ³•
 	 * @param buyTime
 	 */
 	public void setBuyTime(String buyTime) {
 		this.buyTime = buyTime;
 	}
 	/**
-	 * capacityµÄget·½·¨
+	 * capacityçš„getæ–¹æ³•
 	 * @return
 	 */
 	public int getCapacity() {
 		return capacity;
 	}
 	/**
-	 * capacityµÄset·½·¨
+	 * capacityçš„setæ–¹æ³•
 	 * @param capacity
 	 */
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
 	/**
-	 * capacityµÄset·½·¨
-	 * µ±²ÎÊıÎªStringÀàĞÍÊ±£¬¸Ãset·½·¨½«×Ô¶¯½øĞĞÀàĞÍ×ª»»
-	 * µ±×ª»»Ê§°ÜÊ±£¬capacityÄ¬ÈÏÎª5
+	 * capacityçš„setæ–¹æ³•
+	 * å½“å‚æ•°ä¸ºStringç±»å‹æ—¶ï¼Œè¯¥setæ–¹æ³•å°†è‡ªåŠ¨è¿›è¡Œç±»å‹è½¬æ¢
+	 * å½“è½¬æ¢å¤±è´¥æ—¶ï¼Œcapacityé»˜è®¤ä¸º5
 	 * @param capacityStr
 	 */
 	public void setCapacity(String capacityStr)
@@ -137,22 +137,22 @@ public class Car {
 		this.capacity = capacity;
 	}
 	/**
-	 * capunitµÄget·½·¨
+	 * capunitçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCapunit() {
 		return capunit;
 	}
 	/**
-	 * setCapunitµÄset·½·¨
+	 * setCapunitçš„setæ–¹æ³•
 	 * @param capunit
 	 */
 	public void setCapunit(String capunit) {
 		this.capunit = capunit;
 	}
 	/**
-	 * CarµÄ¹¹Ôì·½·¨
-	 * ÊµÏÖÈ«²¿µÄÊôĞÔµÄ³õÊ¼»¯
+	 * Carçš„æ„é€ æ–¹æ³•
+	 * å®ç°å…¨éƒ¨çš„å±æ€§çš„åˆå§‹åŒ–
 	 * @param carId
 	 * @param carType
 	 * @param dirverId
@@ -173,13 +173,13 @@ public class Car {
 		this.capunit = capunit;
 	}
 	/**
-	 * CarµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * Carçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public Car() {
 		super();
 	}
 	/**
-	 * carµÄtoString·½·¨
+	 * carçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

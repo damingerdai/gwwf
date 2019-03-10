@@ -1,67 +1,67 @@
 package com.sun.demo.domain;
 /**
- * ³µÎ»
+ * è½¦ä½
  * @author daming
  *
  */
 public class Park {
 	/**
-	 * ³µÎ»±àºÅ
+	 * è½¦ä½ç¼–å·
 	 */
 	private String pid;
 	/**
-	 * ³µÅÆºÅ
+	 * è½¦ç‰Œå·
 	 */
 	private String carid;
 	/**
-	 * ËµÃ÷
+	 * è¯´æ˜
 	 */
 	private String instrucation;
 	/**
-	 * pidµÄget·½·¨
+	 * pidçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getPid() {
 		return pid;
 	}
 	/**
-	 * pidµÄset·½·¨
+	 * pidçš„setæ–¹æ³•
 	 * @param pid
 	 */
 	public void setPid(String pid) {
 		this.pid = pid;
 	}
 	/**
-	 * caridµÄget·½·¨
+	 * caridçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCarid() {
 		return carid;
 	}
 	/**
-	 * caridµÄset·½·¨
+	 * caridçš„setæ–¹æ³•
 	 * @param carid
 	 */
 	public void setCarid(String carid) {
 		this.carid = carid;
 	}
 	/**
-	 * instrucationµÄget·½·¨
+	 * instrucationçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getInstrucation() {
 		return instrucation;
 	}
 	/**
-	 * instrucationµÄset·½·¨
+	 * instrucationçš„setæ–¹æ³•
 	 * @param instrucation
 	 */
 	public void setInstrucation(String instrucation) {
 		this.instrucation = instrucation;
 	}
 	/**
-	 * ParkµÄ¹¹Ôì·½·¨
-	 * ÊµÏÖÈ«²¿ÊôĞÔµÄ³õÊ¼»¯
+	 * Parkçš„æ„é€ æ–¹æ³•
+	 * å®ç°å…¨éƒ¨å±æ€§çš„åˆå§‹åŒ–
 	 * @param pid
 	 * @param carid
 	 * @param instrucation
@@ -73,13 +73,13 @@ public class Park {
 		this.instrucation = instrucation;
 	}
 	/**
-	 * ParkµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * Parkçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public Park() {
 		super();
 	}
 	/**
-	 * ParkµÄtoString·½·¨
+	 * Parkçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

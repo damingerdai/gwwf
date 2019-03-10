@@ -1,103 +1,103 @@
 package com.sun.demo.bean;
 /**
- * ³µÁ¾µÄÊ¹ÓÃĞÅÏ¢
+ * è½¦è¾†çš„ä½¿ç”¨ä¿¡æ¯
  * @author daming
  *
  */
 public class CarUserInfo {
 	/**
-	 * ³µÅÆºÅ
+	 * è½¦ç‰Œå·
 	 */
 	private String carId;
 	/**
-	 * ³µÁ¾Ê¹ÓÃµÄ³ö·¢Ê±¼ä
+	 * è½¦è¾†ä½¿ç”¨çš„å‡ºå‘æ—¶é—´
 	 */
 	private String usageTime_begin;
 	/**
-	 * ³µÁ¾Ê¹ÓÃµÄ½áÊøÊ±¼ä
+	 * è½¦è¾†ä½¿ç”¨çš„ç»“æŸæ—¶é—´
 	 */
 	private String usageTime_end;
 	/**
-	 * ³µÁ¾Ê¹ÓÃµÄÄ¿µÄ
+	 * è½¦è¾†ä½¿ç”¨çš„ç›®çš„
 	 */
 	private String usage;
 	/**
-	 * ³µÁ¾Ê¹ÓÃÕßµÄÔ±¹¤±àºÅ
+	 * è½¦è¾†ä½¿ç”¨è€…çš„å‘˜å·¥ç¼–å·
 	 */
 	private String userId;
 	/**
-	 * carIdµÄget·½·¨
+	 * carIdçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCarId() {
 		return carId;
 	}
 	/**
-	 * carIdµÄset·½·¨
+	 * carIdçš„setæ–¹æ³•
 	 * @param carId
 	 */
 	public void setCarId(String carId) {
 		this.carId = carId;
 	}
 	/**
-	 * usageTime_beginµÄget·½·¨
+	 * usageTime_beginçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUsageTime_begin() {
 		return usageTime_begin;
 	}
 	/**
-	 * usageTime_beginµÄset·½·¨
+	 * usageTime_beginçš„setæ–¹æ³•
 	 * @param usageTime_begin
 	 */
 	public void setUsageTime_begin(String usageTime_begin) {
 		this.usageTime_begin = usageTime_begin;
 	}
 	/**
-	 * usageTime_endµÄget·½·¨
+	 * usageTime_endçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUsageTime_end() {
 		return usageTime_end;
 	}
 	/**
-	 * usageTime_endµÄset·½·¨
+	 * usageTime_endçš„setæ–¹æ³•
 	 * @param usageTime_end
 	 */
 	public void setUsageTime_end(String usageTime_end) {
 		this.usageTime_end = usageTime_end;
 	}
 	/**
-	 * usageµÄget·½·¨
+	 * usageçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUsage() {
 		return usage;
 	}
 	/**
-	 * usageµÄset·½·¨
+	 * usageçš„setæ–¹æ³•
 	 * @param usage
 	 */
 	public void setUsage(String usage) {
 		this.usage = usage;
 	}
 	/**
-	 * userIdµÄget·½·¨
+	 * userIdçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUserId() {
 		return userId;
 	}
 	/**
-	 * userIdµÄset·½·¨
+	 * userIdçš„setæ–¹æ³•
 	 * @param userId
 	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 	/**
-	 * CarUserInfoµÄ¹¹Ôì·½·¨£»
-	 * ÊµÏÖÈ«²¿µÄÊôĞÔµÄ³õÊ¼»¯
+	 * CarUserInfoçš„æ„é€ æ–¹æ³•ï¼›
+	 * å®ç°å…¨éƒ¨çš„å±æ€§çš„åˆå§‹åŒ–
 	 * @param carId
 	 * @param usageTime_begin
 	 * @param usageTime_end
@@ -114,13 +114,13 @@ public class CarUserInfo {
 		this.userId = userId;
 	}
 	/**
-	 * CarUserInfoµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * CarUserInfoçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public CarUserInfo() {
 		super();
 	}
 	/**
-	 * CarUserInfoµÄtoString·½·¨
+	 * CarUserInfoçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

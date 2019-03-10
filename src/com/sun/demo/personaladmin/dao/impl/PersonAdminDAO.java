@@ -12,7 +12,7 @@ import com.sun.demo.domain.Employee;
 import com.sun.demo.personaladmin.dao.IPersonAdminDAO;
 import com.sun.demo.utils.JDBCTools;
 /**
- * ·â×°ÈËÊÂ¹ÜÀíµÄDAOÊµÏÖÀà
+ * å°è£…äººäº‹ç®¡ç†çš„DAOå®ç°ç±»
  * @author daming
  *
  */

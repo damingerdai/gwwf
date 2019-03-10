@@ -1,49 +1,49 @@
 package com.sun.demo.domain;
 /**
- * ²¿ÃÅ
+ * éƒ¨é—¨
  * @author daming
  *
  */
 public class Department {
 	/**
-	 * ²¿ÃÅ±àºÅ
+	 * éƒ¨é—¨ç¼–å·
 	 */
 	private String depid;
 	/**
-	 * ²¿ÃÅÃû³Æ
+	 * éƒ¨é—¨åç§°
 	 */
 	private String dname;
 	/**
-	 * depidµÄget·½·¨
+	 * depidçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getDepid() {
 		return depid;
 	}
 	/**
-	 * depidµÄset·½·¨
+	 * depidçš„setæ–¹æ³•
 	 * @param depid
 	 */
 	public void setDepid(String depid) {
 		this.depid = depid;
 	}
 	/**
-	 * dnameµÄget·½·¨
+	 * dnameçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getDname() {
 		return dname;
 	}
 	/**
-	 * dnameµÄset·½·¨
+	 * dnameçš„setæ–¹æ³•
 	 * @param dname
 	 */
 	public void setDname(String dname) {
 		this.dname = dname;
 	}
 	/**
-	 * DepartmentµÄ¹¹Ôì·½·¨
-	 * ÊµÏÖÈ«²¿ÊôĞÔµÄ³õÊ¼»¯
+	 * Departmentçš„æ„é€ æ–¹æ³•
+	 * å®ç°å…¨éƒ¨å±æ€§çš„åˆå§‹åŒ–
 	 * @param depid
 	 * @param dname
 	 */
@@ -53,13 +53,13 @@ public class Department {
 		this.dname = dname;
 	}
 	/**
-	 * DepartmentµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * Departmentçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public Department() {
 		super();
 	}
 	/**
-	 * DepartmentµÄtoString·½·¨
+	 * Departmentçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

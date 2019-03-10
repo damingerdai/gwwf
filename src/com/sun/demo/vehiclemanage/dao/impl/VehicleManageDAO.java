@@ -14,7 +14,7 @@ import com.sun.demo.domain.Park;
 import com.sun.demo.utils.JDBCTools;
 import com.sun.demo.vehiclemanage.dao.IVehicleManageDAO;
 /**
- * ³µÁ¾¹ÜÀíÄ£¿éDAOÊµÏÖÀà
+ * è½¦è¾†ç®¡ç†æ¨¡å—DAOå®ç°ç±»
  * @author daming
  *
  */

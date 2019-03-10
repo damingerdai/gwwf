@@ -10,91 +10,91 @@ import com.sun.demo.domain.Park;
 import com.sun.demo.web.Page;
 
 /**
- * ³µÁ¾¹ÜÀíÄ£¿éµÄservice½Ó¿Ú
+ * è½¦è¾†ç®¡ç†æ¨¡å—çš„serviceæ¥å£
  * @author daming
  *
  */
 public interface IVehicleManageService {
 	/**
-	 * »ñµÃÈ«²¿µÄ³µÎ»ĞÅÏ¢£¬·â×°³ÉList¼¯ºÏ
-	 * @return È«²¿µÄ³µÎ»ĞÅÏ¢
+	 * è·å¾—å…¨éƒ¨çš„è½¦ä½ä¿¡æ¯ï¼Œå°è£…æˆListé›†åˆ
+	 * @return å…¨éƒ¨çš„è½¦ä½ä¿¡æ¯
 	 */
 	List<Park> getParkingInfo();
 	
 	/**
-	 * »ñµÃÈ«²¿µÄ³µÁ¾ĞÅÏ¢£¬·â×°³ÉList¼¯ºÏ
-	 * @return È«²¿µÄ³µÁ¾ĞÅÏ¢
+	 * è·å¾—å…¨éƒ¨çš„è½¦è¾†ä¿¡æ¯ï¼Œå°è£…æˆListé›†åˆ
+	 * @return å…¨éƒ¨çš„è½¦è¾†ä¿¡æ¯
 	 */
 	List<Car> getCarInfo();
 	
 	/**
-	 * ¸ù¾İ³µÎ»±àºÅ»ñµÃ¶ÔÓ¦µÄ³µÎ»ĞÅÏ¢
-	 * @param pid ³µÎ»±àºÅ
-	 * @return ³µÎ»ĞÅÏ¢
+	 * æ ¹æ®è½¦ä½ç¼–å·è·å¾—å¯¹åº”çš„è½¦ä½ä¿¡æ¯
+	 * @param pid è½¦ä½ç¼–å·
+	 * @return è½¦ä½ä¿¡æ¯
 	 */
 	Park getPark(String pid);
 	
 	/**
-	 * ¸ù¾İ³µÅÆºÅÀ´»ñµÃ¶ÔÓ¦µÄ³µÁ¾ĞÅÏ¢
-	 * @param ³µÅÆºÅ
-	 * @return ³µÁ¾ĞÅÏ¢
+	 * æ ¹æ®è½¦ç‰Œå·æ¥è·å¾—å¯¹åº”çš„è½¦è¾†ä¿¡æ¯
+	 * @param è½¦ç‰Œå·
+	 * @return è½¦è¾†ä¿¡æ¯
 	 */
 	Car getCar(String carid);
 	
 	/**
-	 * ÅĞ¶Ï¸Ã³µÁ¾ÊÇ·ñÓĞ³µÎ»
-	 * @param car ³µÁ¾ĞÅÏ¢
-	 * @return ´æÔÚ³µÎ»·µ»Øtrue£¬²»´æÔÚ³µÎ»·µ»Øfalse
+	 * åˆ¤æ–­è¯¥è½¦è¾†æ˜¯å¦æœ‰è½¦ä½
+	 * @param car è½¦è¾†ä¿¡æ¯
+	 * @return å­˜åœ¨è½¦ä½è¿”å›trueï¼Œä¸å­˜åœ¨è½¦ä½è¿”å›false
 	 */
 	boolean hasPark(Car car);
 	
 	/**
-	 * Ôö¼ÓÒ»¸öĞÂµÄ³µÎ»
-	 * @param park ĞÂÔö³µÎ»
+	 * å¢åŠ ä¸€ä¸ªæ–°çš„è½¦ä½
+	 * @param park æ–°å¢è½¦ä½
 	 */
 	void addPark(Park park);
 	
 	/**
-	 * »ñµÃËùÓĞµÄË¾»ú£¬Êµ¼ÊÉÏ¾ÍÊÇËùÓĞÓĞ¼İÊ»Ö¤µÄÔ±¹¤¡£
-	 * @return È«²¿Ë¾»ú
+	 * è·å¾—æ‰€æœ‰çš„å¸æœºï¼Œå®é™…ä¸Šå°±æ˜¯æ‰€æœ‰æœ‰é©¾é©¶è¯çš„å‘˜å·¥ã€‚
+	 * @return å…¨éƒ¨å¸æœº
 	 */
 	List<User> getDriver();
 	
 	/**
-	 * ĞÂÔö³µÁ¾ĞÅÏ¢
-	 * @param car ĞÂ³µÁ¾ĞÅÏ¢
+	 * æ–°å¢è½¦è¾†ä¿¡æ¯
+	 * @param car æ–°è½¦è¾†ä¿¡æ¯
 	 */
 	void addCar(Car car);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ²éÕÒ¸ÃÔ±¹¤
-	 * @param empId Ô±¹¤±àºÅ
-	 * @return Ô±¹¤ĞÅÏ¢
+	 * æ ¹æ®å‘˜å·¥ç¼–å·æŸ¥æ‰¾è¯¥å‘˜å·¥
+	 * @param empId å‘˜å·¥ç¼–å·
+	 * @return å‘˜å·¥ä¿¡æ¯
 	 */
 	Employee searchEmployee(String empId);
 	
 	/**
-	 * ĞÂÔöÒ»Ìõ³µÁ¾Ê¹ÓÃ¼ÇÂ¼
-	 * @param cui ĞÂ³µÁ¾Ê¹ÓÃ¼ÇÂ¼
+	 * æ–°å¢ä¸€æ¡è½¦è¾†ä½¿ç”¨è®°å½•
+	 * @param cui æ–°è½¦è¾†ä½¿ç”¨è®°å½•
 	 */
 	void addCarUserInfo(CarUserInfo cui);
 	
 	/**
-	 * »ñµÃÖ¸¶¨Ò³ÃæµÄ³µÁ¾Ê¹ÓÃ¼ÇÂ¼
-	 * @param pageNo Ö¸¶¨Ò³Ãæ
-	 * @return ³µÁ¾Ê¹ÓÃ¼ÇÂ¼
+	 * è·å¾—æŒ‡å®šé¡µé¢çš„è½¦è¾†ä½¿ç”¨è®°å½•
+	 * @param pageNo æŒ‡å®šé¡µé¢
+	 * @return è½¦è¾†ä½¿ç”¨è®°å½•
 	 */
 	Page<CarUserInfo> getPage(int pageNo);
 	
 	/**
-	 * ¸üĞÂ³µÁ¾ĞÅÏ¢
-	 * @param car ĞèÒª¸üĞÂµÄ³µÁ¾ĞÅÏ¢
+	 * æ›´æ–°è½¦è¾†ä¿¡æ¯
+	 * @param car éœ€è¦æ›´æ–°çš„è½¦è¾†ä¿¡æ¯
 	 */
 	void updateCarInfo(Car car);
 	
 	/**
-	 * ¸üĞÂ³µÎ»ĞÅÏ¢ 
-	 * @param park ĞèÒª¸üĞÂµÄ³µÎ»ĞÅÏ¢
+	 * æ›´æ–°è½¦ä½ä¿¡æ¯ 
+	 * @param park éœ€è¦æ›´æ–°çš„è½¦ä½ä¿¡æ¯
  	 */
 	void updateParking(Park park);
 }

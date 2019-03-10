@@ -9,16 +9,16 @@ import java.sql.Statement;
 import java.util.Properties;
 
 /**
- * JDBC¹¤¾ßÀà£¬¿ÉÒÔÊµÏÖÔöÉ¾¸Ä²é
+ * JDBCå·¥å…·ç±»ï¼Œå¯ä»¥å®ç°å¢åˆ æ”¹æŸ¥
  * 
  * @author daming
  * 
  */
 public class JDBCTools {
 	/**
-	 * »ñµÃÊı¾İ¿âµÄÁ¬½Ó
+	 * è·å¾—æ•°æ®åº“çš„è¿æ¥
 	 * 
-	 * @return Êı¾İ¿âÁ¬½Ó
+	 * @return æ•°æ®åº“è¿æ¥
 	 */
 	public static Connection getConnection() {
 		String driverClass = null;
@@ -43,7 +43,7 @@ public class JDBCTools {
 	}
 
 	/**
-	 * ¹Ø±ÕÊı¾İ¿âµÄÁ¬½Ó
+	 * å…³é—­æ•°æ®åº“çš„è¿æ¥
 	 * 
 	 * @param conn
 	 */
@@ -58,7 +58,7 @@ public class JDBCTools {
 	}
 
 	/**
-	 * ¹Ø±ÕÊı¾İ¿âµÄÁ¬½Ó
+	 * å…³é—­æ•°æ®åº“çš„è¿æ¥
 	 * 
 	 * @param st
 	 * @param conn
@@ -75,7 +75,7 @@ public class JDBCTools {
 	}
 
 	/**
-	 * ¹Ø±ÕÊı¾İ¿âµÄÁ¬½Ó
+	 * å…³é—­æ•°æ®åº“çš„è¿æ¥
 	 * 
 	 * @param rs
 	 * @param st
@@ -114,7 +114,7 @@ public class JDBCTools {
 
 
 	/**
-	 *  Ìá½»ÊÂÎñ
+	 *  æäº¤äº‹åŠ¡
 	 * @param conn
 	 */
 	public static void commit(Connection conn) {
@@ -128,7 +128,7 @@ public class JDBCTools {
 	}
 
 	/**
-	 * »Ø¹öÊÂÎñ
+	 * å›æ»šäº‹åŠ¡
 	 */
 	public static void rollback(Connection conn) {
 		if (conn != null) {
@@ -141,7 +141,7 @@ public class JDBCTools {
 	}
 
 	/**
-	 * ¿ªÊ¼ÊÂÎñ
+	 * å¼€å§‹äº‹åŠ¡
 	 * @param conn
 	 */
 	public static void beginTx(Connection conn) {

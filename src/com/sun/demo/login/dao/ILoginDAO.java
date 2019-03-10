@@ -4,35 +4,35 @@ import com.sun.demo.bean.User;
 import com.sun.demo.domain.Employee;
 
 /**
- * ÓĞ¹ØµÇÂ¼Ä£¿éµÄDAO²Ù×÷µÄ½Ó¿Ú
+ * æœ‰å…³ç™»å½•æ¨¡å—çš„DAOæ“ä½œçš„æ¥å£
  * @author daming
  */
 public interface ILoginDAO {
 	/**
-	 * ÅĞ¶ÏÊı¾İ¿âÖĞÊÇ·ñ´æÔÚÓÃ»§»òÕßÃÜÂëÊÇ·ñÕıÈ·
-	 * @param user:ÓÃ»§ÔÚµÇÂ¼Ò³ÃæÖĞÊäÈëµÄÓÃ»§ÃûºÍÃÜÂë·â×°³ÉµÄ¶ÔÏó
-	 * @return :ÈôÓÃ»§´æÔÚ¶øÇÒÓÃ»§ÃÜÂëÕıÈ·£¬·µ»Øtrue£»·ñÔò·µ»Øfalse
+	 * åˆ¤æ–­æ•°æ®åº“ä¸­æ˜¯å¦å­˜åœ¨ç”¨æˆ·æˆ–è€…å¯†ç æ˜¯å¦æ­£ç¡®
+	 * @param user:ç”¨æˆ·åœ¨ç™»å½•é¡µé¢ä¸­è¾“å…¥çš„ç”¨æˆ·åå’Œå¯†ç å°è£…æˆçš„å¯¹è±¡
+	 * @return :è‹¥ç”¨æˆ·å­˜åœ¨è€Œä¸”ç”¨æˆ·å¯†ç æ­£ç¡®ï¼Œè¿”å›trueï¼›å¦åˆ™è¿”å›false
 	 */
 	Employee findUser(User user);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ²éÕÒÔ±¹¤
+	 * æ ¹æ®å‘˜å·¥ç¼–å·æŸ¥æ‰¾å‘˜å·¥
 	 * @param empid
-	 * @return Ô±¹¤ĞÅÏ¢
+	 * @return å‘˜å·¥ä¿¡æ¯
 	 */
 	Employee searcheEmployee(String empId);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ»ñµÃÔ±¹¤Ãû;
+	 * æ ¹æ®å‘˜å·¥ç¼–å·è·å¾—å‘˜å·¥å;
 	 * @param empId
-	 * @return Ô±¹¤Ãû
+	 * @return å‘˜å·¥å
 	 */
 	String searchUsername(String empId);
 	
 	/**
-	 * ¸ù¾İÔ±¹¤±àºÅ»ñµÃÔ±¹¤µÄ²¿ÃÅ±àºÅ
+	 * æ ¹æ®å‘˜å·¥ç¼–å·è·å¾—å‘˜å·¥çš„éƒ¨é—¨ç¼–å·
 	 * @param empid
-	 * @return Ô±¹¤ËùÔÚ²¿ÃÅµÄÔ±¹¤±àºÅ
+	 * @return å‘˜å·¥æ‰€åœ¨éƒ¨é—¨çš„å‘˜å·¥ç¼–å·
 	 */
 	String searchDepId(String empid);
 

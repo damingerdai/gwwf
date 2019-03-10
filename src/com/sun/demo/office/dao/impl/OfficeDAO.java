@@ -10,7 +10,7 @@ import com.sun.demo.bean.OfficeStationery;
 import com.sun.demo.office.dao.IOfficeDAO;
 import com.sun.demo.utils.JDBCTools;
 /**
- * °ì¹«ÓÃÆ·Ïà¹ØµÄDAOÊµÏÖÀà
+ * åŠå…¬ç”¨å“ç›¸å…³çš„DAOå®ç°ç±»
  * @author daming
  *
  */

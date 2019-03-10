@@ -1,9 +1,9 @@
 /**
- *  ³µÁ¾¹ÜÀíÄ£¿éServlet°ü
+ *  è½¦è¾†ç®¡ç†æ¨¡å—ServletåŒ…
  *  <p>  
- *  <h1>³µÁ¾¹ÜÀí</h1>  
+ *  <h1>è½¦è¾†ç®¡ç†</h1>  
  *  <p>
- *  1.ÊµÏÖ³µÁ¾£¬³µÎ»ÐÅÏ¢µÄÔöÉ¾¸Ä²é<br/>
+ *  1.å®žçŽ°è½¦è¾†ï¼Œè½¦ä½ä¿¡æ¯çš„å¢žåˆ æ”¹æŸ¥<br/>
  *  @author daming 
  *  @since JDK1.8  
  *  @version 1.0.0  

@@ -9,7 +9,7 @@ import com.sun.demo.domain.Employee;
 import com.sun.demo.login.dao.ILoginDAO;
 import com.sun.demo.utils.JDBCTools;
 /**
- * IEmployeeDAO的实现类
+ * IEmployeeDAO鐨勫疄鐜扮被
  * @author daming
  *
  */

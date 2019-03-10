@@ -1,9 +1,9 @@
 /**
- *  ���¹���ģ��Service�ӿڰ�
+ *  人事管理模块Service接口包
  *  <p>  
- *  <h1>���¹���ģ��</h1>  
+ *  <h1>人事管理模块</h1>  
  *  <p>
- *  ����Ա�������ţ���λ����Ϣ
+ *  处理员工，部门，车位的信息
  *  @author daming 
  *  @since JDK1.8  
  *  @version 1.0.0  

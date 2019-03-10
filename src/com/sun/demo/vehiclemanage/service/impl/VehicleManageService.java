@@ -13,14 +13,14 @@ import com.sun.demo.vehiclemanage.service.IVehicleManageService;
 import com.sun.demo.web.Page;
 
 /**
- * ³µÁ¾¹ÜÀíÄ£¿éµÄserviceÊµÏÖÀà
+ * è½¦è¾†ç®¡ç†æ¨¡å—çš„serviceå®ç°ç±»
  * @author daming
  *
  */
 public class VehicleManageService implements IVehicleManageService {
 
 	/**
-	 * ³µÁ¾¹ÜÀíDAO²Ù×÷
+	 * è½¦è¾†ç®¡ç†DAOæ“ä½œ
 	 */
 	private IVehicleManageDAO vmDAO = new VehicleManageDAO();
 	@Override

@@ -13,7 +13,7 @@ import com.sun.demo.personaladmin.dao.impl.PersonAdminDAO;
 import com.sun.demo.personaladmin.service.IPersonAdminService;
 import com.sun.demo.web.Page;
 /**
- * Ô±¹¤ÈËÊÂ¹ÜÀíµÄÊµÏÖ£¬ÓÃÓÚ·â×°Ôö¼ÓºÍĞŞ¸ÄÔ±¹¤ĞÅÏ¢µÈ²Ù×÷
+ * å‘˜å·¥äººäº‹ç®¡ç†çš„å®ç°ï¼Œç”¨äºå°è£…å¢åŠ å’Œä¿®æ”¹å‘˜å·¥ä¿¡æ¯ç­‰æ“ä½œ
  * @author daming
  * 
  */
@@ -148,7 +148,7 @@ public class PersonAdminService implements IPersonAdminService {
 	}
 
 	/**
-	 * ¸ù¾İÉÏÏÂ°àµÄÊ±¼äÅĞ¶Ï³Ùµ½»òÕßÔçÍË
+	 * æ ¹æ®ä¸Šä¸‹ç­çš„æ—¶é—´åˆ¤æ–­è¿Ÿåˆ°æˆ–è€…æ—©é€€
 	 * @param ontime
 	 * @param offtime
 	 */
@@ -174,15 +174,15 @@ public class PersonAdminService implements IPersonAdminService {
 		String remark = "";
 		if(on > 9)
 		{
-			remark += "³Ùµ½,";
+			remark += "è¿Ÿåˆ°,";
 		}
 		if(off < 17)
 		{
-			remark += "ÔçÍË,";
+			remark += "æ—©é€€,";
 		}
 		if(remark.equals(""))
 		{
-			remark = "Õı³£";
+			remark = "æ­£å¸¸";
 		}
 		else
 		{
@@ -198,7 +198,7 @@ public class PersonAdminService implements IPersonAdminService {
 		if(totalItemNumber > 0)
 		{
 			page.setTotalItemNumber(totalItemNumber);
-			//ÑéÖ¤Êı¾İµÄºÏ·¨ĞÔ
+			//éªŒè¯æ•°æ®çš„åˆæ³•æ€§
 			pageNo = page.getPageNo();
 			List<AttendanceRecord> list = pDAO.getAttendanceRecord( pageNo, 5);
 			List<AttendanceRecord> ars = new ArrayList<>();
@@ -266,7 +266,7 @@ public class PersonAdminService implements IPersonAdminService {
 		String dname = pDAO.getDname(depid);
 		if("".equals(dname))
 		{
-			return "ĞĞÕş²¿ÃÅ";
+			return "è¡Œæ”¿éƒ¨é—¨";
 		}
 		return dname;
 	}

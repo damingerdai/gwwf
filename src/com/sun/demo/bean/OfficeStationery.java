@@ -1,67 +1,67 @@
 package com.sun.demo.bean;
 /**
- * °ì¹«ÓÃÆ·
+ * åŠå…¬ç”¨å“
  * @author daming
  *
  */
 public class OfficeStationery {
 	/**
-	 * °ì¹«ÓÃÆ·µÄÃû³Æ
+	 * åŠå…¬ç”¨å“çš„åç§°
 	 */
 	private String uname;
 	/**
-	 * °ì¹«ÓÃÆ·µÄµ¥Î»
+	 * åŠå…¬ç”¨å“çš„å•ä½
 	 */
 	private String unit;
 	/**
-	 * °ì¹«ÓÃÆ·µÄÊıÁ¿
+	 * åŠå…¬ç”¨å“çš„æ•°é‡
 	 */
 	private int storeNumber;
 	/**
-	 * unameµÄget·½·¨
+	 * unameçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUname() {
 		return uname;
 	}
 	/**
-	 * unameµÄset·½·¨
+	 * unameçš„setæ–¹æ³•
 	 * @param uname
 	 */
 	public void setUname(String uname) {
 		this.uname = uname;
 	}
 	/**
-	 * unitµÄget·½·¨
+	 * unitçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUnit() {
 		return unit;
 	}
 	/**
-	 * unitµÄset·½·¨
+	 * unitçš„setæ–¹æ³•
 	 * @param unit
 	 */
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
 	/**
-	 * storeNumberµÄget·½·¨
+	 * storeNumberçš„getæ–¹æ³•
 	 * @return
 	 */
 	public int getStoreNumber() {
 		return storeNumber;
 	}
 	/**
-	 * storeNumberµÄset·½·¨
+	 * storeNumberçš„setæ–¹æ³•
 	 * @param storeNumber
 	 */
 	public void setStoreNumber(int storeNumber) {
 		this.storeNumber = storeNumber;
 	}
 	/**
-	 * OfficeStationeryµÄ¹¹Ôì·½·¨
-	 * ÊµÏÖÈ«²¿ÊôĞÔµÄ³õÊ¼»¯
+	 * OfficeStationeryçš„æ„é€ æ–¹æ³•
+	 * å®ç°å…¨éƒ¨å±æ€§çš„åˆå§‹åŒ–
 	 * @param uname
 	 * @param unit
 	 * @param storeNumber
@@ -73,13 +73,13 @@ public class OfficeStationery {
 		this.storeNumber = storeNumber;
 	}
 	/**
-	 * OfficeStationeryµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * OfficeStationeryçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public OfficeStationery() {
 		super();
 	}
 	/**
-	 * OfficeStationeryµÄtoString·½·¨
+	 * OfficeStationeryçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

@@ -1,175 +1,175 @@
 package com.sun.demo.domain;
 /**
- * Ô±¹¤
+ * å‘˜å·¥
  * @author daming
  *
  */
 public class Employee {
 	/**
-	 * Ô±¹¤ºÅ
+	 * å‘˜å·¥å·
 	 */
 	private String empId;
 	/**
-	 * Ô±¹¤Ãû
+	 * å‘˜å·¥å
 	 */
 	private String username;
 	/**
-	 * ÃÜÂë
+	 * å¯†ç 
 	 */
 	private String password;
 	/**
-	 * ĞÔ±ğ
+	 * æ€§åˆ«
 	 */
 	private String gender;
 	/**
-	 * ÉúÈÕ
+	 * ç”Ÿæ—¥
 	 */
 	private String birthday;
 	/**
-	 * ×¨Òµ
+	 * ä¸“ä¸š
 	 */
 	private String major;
 	/**
-	 * Ñ§Àú
+	 * å­¦å†
 	 */
 	private String edu;
 	/**
-	 * ±ÏÒµÑ§Ğ£
+	 * æ¯•ä¸šå­¦æ ¡
 	 */
 	private String college;
 	/**
-	 * ²¿ÃÅ±àºÅ
+	 * éƒ¨é—¨ç¼–å·
 	 */
 	private String depId;
 	/**
-	 * empIdµÄget·½·¨
+	 * empIdçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getEmpId() {
 		return empId;
 	}
 	/**
-	 * empIdµÄset·½·¨
+	 * empIdçš„setæ–¹æ³•
 	 * @param empId
 	 */
 	public void setEmpId(String empId) {
 		this.empId = empId;
 	}
 	/**
-	 * usernameµÄget·½·¨
+	 * usernameçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getUsername() {
 		return username;
 	}
 	/**
-	 * usernameµÄset·½·¨
+	 * usernameçš„setæ–¹æ³•
 	 * @param username
 	 */
 	public void setUsername(String username) {
 		this.username = username;
 	}
 	/**
-	 * passwordµÄget·½·¨
+	 * passwordçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getPassword() {
 		return password;
 	}
 	/**
-	 * passwordµÄset·½·¨
+	 * passwordçš„setæ–¹æ³•
 	 * @param password
 	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 	/**
-	 * genderµÄget·½·¨
+	 * genderçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getGender() {
 		return gender;
 	}
 	/**
-	 * genderµÄset·½·¨
+	 * genderçš„setæ–¹æ³•
 	 * @param gender
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
 	/**
-	 * birthdayµÄget·½·¨
+	 * birthdayçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getBirthday() {
 		return birthday;
 	}
 	/**
-	 * birthdayµÄset·½·¨
+	 * birthdayçš„setæ–¹æ³•
 	 * @param birthday
 	 */
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
 	/**
-	 * majorµÄget·½·¨
+	 * majorçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getMajor() {
 		return major;
 	}
 	/**
-	 * majorµÄset·½·¨
+	 * majorçš„setæ–¹æ³•
 	 * @param major
 	 */
 	public void setMajor(String major) {
 		this.major = major;
 	}
 	/**
-	 * eduµÄget·½·¨
+	 * eduçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getEdu() {
 		return edu;
 	}
 	/**
-	 * eduµÄset·½·¨
+	 * eduçš„setæ–¹æ³•
 	 * @param edu
 	 */
 	public void setEdu(String edu) {
 		this.edu = edu;
 	}
 	/**
-	 * collegeµÄget·½·¨
+	 * collegeçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getCollege() {
 		return college;
 	}
 	/**
-	 * collegeµÄset·½·¨
+	 * collegeçš„setæ–¹æ³•
 	 * @param college
 	 */
 	public void setCollege(String college) {
 		this.college = college;
 	}
 	/**
-	 * depIdµÄget·½·¨
+	 * depIdçš„getæ–¹æ³•
 	 * @return
 	 */
 	public String getDepId() {
 		return depId;
 	}
 	/**
-	 * depIdµÄset·½·¨
+	 * depIdçš„setæ–¹æ³•
 	 * @param depId
 	 */
 	public void setDepId(String depId) {
 		this.depId = depId;
 	}
 	/**
-	 * EmployeeµÄ¹¹Ôì·½·¨
-	 * ÊµÏÖÈ«²¿ÊôĞÔµÄ³õÊ¼»¯
+	 * Employeeçš„æ„é€ æ–¹æ³•
+	 * å®ç°å…¨éƒ¨å±æ€§çš„åˆå§‹åŒ–
 	 * @param empId
 	 * @param username
 	 * @param password
@@ -195,13 +195,13 @@ public class Employee {
 		this.depId = depId;
 	}
 	/**
-	 * EmployeeµÄÄ¬ÈÏ¹¹Ôì·½·¨
+	 * Employeeçš„é»˜è®¤æ„é€ æ–¹æ³•
 	 */
 	public Employee() {
 		super();
 	}
 	/**
-	 * EmployeeµÄtoString·½·¨
+	 * Employeeçš„toStringæ–¹æ³•
 	 */
 	@Override
 	public String toString() {

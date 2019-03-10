@@ -4,27 +4,27 @@ import java.util.List;
 
 import com.sun.demo.bean.OfficeStationery;
 /**
- * °ì¹«ÓÃÆ·ËùĞèµÄºóÌ¨·şÎñ½Ó¿Ú
+ * åŠå…¬ç”¨å“æ‰€éœ€çš„åå°æœåŠ¡æ¥å£
  * @author daming
  *
  */
 public interface IOfficeService {
 	/**
-	 * »ñµÃÈ«²¿µÄ°ì¹«ÓÃÆ·ĞÅÏ¢
-	 * @return £ºÈ«²¿°ì¹«ÓÃÆ·µÄĞÅÏ¢
+	 * è·å¾—å…¨éƒ¨çš„åŠå…¬ç”¨å“ä¿¡æ¯
+	 * @return ï¼šå…¨éƒ¨åŠå…¬ç”¨å“çš„ä¿¡æ¯
 	 */
 	List<OfficeStationery> getOffice();
 	
 	/**
-	 * ¸üĞÂÖ¸¶¨Ô±¹¤Ê¹ÓÃÖ¸¶¨°ì¹«ÓÃÆ·µÄÇé¿ö
-	 * @param empid £ºÔ±¹¤±àºÅ
-	 * @param list £ºĞèÒª¸üĞÂ°ì¹«ÓÃÆ·µÄĞÅÏ¢
+	 * æ›´æ–°æŒ‡å®šå‘˜å·¥ä½¿ç”¨æŒ‡å®šåŠå…¬ç”¨å“çš„æƒ…å†µ
+	 * @param empid ï¼šå‘˜å·¥ç¼–å·
+	 * @param list ï¼šéœ€è¦æ›´æ–°åŠå…¬ç”¨å“çš„ä¿¡æ¯
 	 */
 	void updateOfficeUsage(String empid,List<OfficeStationery> list);
 	
 	/**
-	 * ¸üĞÂ°ì¹«ÓÃÆ·µÄ¿â´æĞÅÏ¢
-	 * @param list ĞèÒª¸üĞÂµÄ°ì¹«ÓÃÆ·µÄĞÅÏ¢
+	 * æ›´æ–°åŠå…¬ç”¨å“çš„åº“å­˜ä¿¡æ¯
+	 * @param list éœ€è¦æ›´æ–°çš„åŠå…¬ç”¨å“çš„ä¿¡æ¯
 	 */
 	void updateOfficeStationery(List<OfficeStationery> list);
 }

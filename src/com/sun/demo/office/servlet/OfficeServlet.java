@@ -14,18 +14,18 @@ import com.sun.demo.bean.OfficeStationery;
 import com.sun.demo.office.service.IOfficeService;
 import com.sun.demo.office.service.impl.OfficeService;
 /**
- * °ì¹«ÓÃÆ·Ä£¿éµÄServlet
+ * åŠå…¬ç”¨å“æ¨¡å—çš„Servlet
  * @author daming
  *
  */
 public class OfficeServlet extends HttpServlet {
 	/**
-	 * °ì¹«ÓÃÆ·ºóÌ¨´¦Àí·şÎñ
+	 * åŠå…¬ç”¨å“åå°å¤„ç†æœåŠ¡
 	 */
 	private IOfficeService offService = new OfficeService();
  
 	/**
-	 * doGet·½·¨
+	 * doGetæ–¹æ³•
 	 */
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -33,7 +33,7 @@ public class OfficeServlet extends HttpServlet {
 	}
 
 	/**
-	 * doPost·½·¨
+	 * doPostæ–¹æ³•
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -51,11 +51,11 @@ public class OfficeServlet extends HttpServlet {
 		
 	}
 	/**
-	 * »ñµÃ°ì¹«ÓÃÆ·¿â´æµÄĞÅÏ¢²¢ÇÒ½«ÕâĞ©ĞÅÏ¢·ÅÔÚcheckInventory.jspÉÏ
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * è·å¾—åŠå…¬ç”¨å“åº“å­˜çš„ä¿¡æ¯å¹¶ä¸”å°†è¿™äº›ä¿¡æ¯æ”¾åœ¨checkInventory.jspä¸Š
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void getOffice(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException,IOException
@@ -66,11 +66,11 @@ public class OfficeServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ¸üĞÂ°ì¹«ÓÃÆ·µÄ¿â´æĞÅÏ¢
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ›´æ–°åŠå…¬ç”¨å“çš„åº“å­˜ä¿¡æ¯
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void updateOfficeStationery(HttpServletRequest request,
 			HttpServletResponse response ) throws ServletException,IOException
@@ -91,11 +91,11 @@ public class OfficeServlet extends HttpServlet {
 	}
 
 	/**
-	 * ½«´ÓÒ³Ãæ»ñµÃĞÅÏ¢·â×°³ÉOfficeStationeryÀàĞÍµÄ¼¯ºÏ
-	 * @param unames £º´æ·Å°ì¹«ÓÃÆ·Ãû³ÆµÄStringÀàĞÍÊı×é
-	 * @param storeNumbersStr £º´æ·Å°ì¹«ÓÃÆ·ÊıÁ¿µÄStringÀàĞÍÊı×é
-	 * @param units £º ´æ·Å°ì¹«ÓÃÆ·µ¥Î»µÄStringÀàĞÍÊı×é
-	 * @return £º´æ·Å°ì¹«ÓÃÆ·µÄOfficeStationeryÀàĞÍÊı×é
+	 * å°†ä»é¡µé¢è·å¾—ä¿¡æ¯å°è£…æˆOfficeStationeryç±»å‹çš„é›†åˆ
+	 * @param unames ï¼šå­˜æ”¾åŠå…¬ç”¨å“åç§°çš„Stringç±»å‹æ•°ç»„
+	 * @param storeNumbersStr ï¼šå­˜æ”¾åŠå…¬ç”¨å“æ•°é‡çš„Stringç±»å‹æ•°ç»„
+	 * @param units ï¼š å­˜æ”¾åŠå…¬ç”¨å“å•ä½çš„Stringç±»å‹æ•°ç»„
+	 * @return ï¼šå­˜æ”¾åŠå…¬ç”¨å“çš„OfficeStationeryç±»å‹æ•°ç»„
 	 */
 	private List<OfficeStationery> getOffceByInfo(String[] unames,
 			String[] storeNumbersStr, String[] units) {
@@ -125,11 +125,11 @@ public class OfficeServlet extends HttpServlet {
 	}
 	
 	/**
-	 * ¸üĞÂ°ì¹«ÓÃÆ·µÄĞÅĞÄ£¬²¢ÇÒ·µ»ØCheckInventory.jsp
-	 * @param request £ºÇëÇó
-	 * @param response £ºÏìÓ¦
-	 * @throws ServletException £ºServletÒì³£
-	 * @throws IOException £º IOÒì³£
+	 * æ›´æ–°åŠå…¬ç”¨å“çš„ä¿¡å¿ƒï¼Œå¹¶ä¸”è¿”å›CheckInventory.jsp
+	 * @param request ï¼šè¯·æ±‚
+	 * @param response ï¼šå“åº”
+	 * @throws ServletException ï¼šServletå¼‚å¸¸
+	 * @throws IOException ï¼š IOå¼‚å¸¸
 	 */
 	public void updateOfficeInfo(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException,IOException

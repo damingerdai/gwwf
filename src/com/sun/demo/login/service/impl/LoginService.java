@@ -8,7 +8,7 @@ import com.sun.demo.login.service.ILoginService;
 
 public class LoginService implements ILoginService {
 	/**
-	 * µÇÂ¼Ä£¿éµÄDAO²Ù×÷
+	 * ç™»å½•æ¨¡å—çš„DAOæ“ä½œ
 	 */
 	private ILoginDAO eDAO = new LoginDAO();
 
