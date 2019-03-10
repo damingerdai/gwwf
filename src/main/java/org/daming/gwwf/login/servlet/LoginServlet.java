@@ -12,41 +12,18 @@ import javax.servlet.http.HttpSession;
 import org.daming.gwwf.bean.User;
 import org.daming.gwwf.login.service.ILoginService;
 import org.daming.gwwf.login.service.impl.LoginService;
+import org.daming.gwwf.web.AbstractHttpServlet;
 
 /**
  * 登录模块的Servlet
  * @author daming
  *
  */
-public class LoginServlet extends HttpServlet {
+public class LoginServlet extends AbstractHttpServlet {
 	/**
 	 * 登录模块的Service
 	 */
 	private ILoginService loginService = new LoginService();
-
-	/**
-	 * doGet方法
-	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		this.doPost(request, response);
-	}
-
-	/**
-	 * doPost方法
-	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String methodName = request.getParameter("method");
-		try {
-			Method method = getClass().getDeclaredMethod(methodName,
-					HttpServletRequest.class, HttpServletResponse.class);
-			method.setAccessible(true);
-			method.invoke(this, request, response);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	/**
 	 * 用于判断用户输入的员工编号和密码是否正确

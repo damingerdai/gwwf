@@ -13,44 +13,20 @@ import javax.servlet.http.HttpServletResponse;
 import org.daming.gwwf.bean.OfficeStationery;
 import org.daming.gwwf.office.service.IOfficeService;
 import org.daming.gwwf.office.service.impl.OfficeService;
+import org.daming.gwwf.web.AbstractHttpServlet;
 
 /**
  * 办公用品模块的Servlet
  * @author daming
  *
  */
-public class OfficeServlet extends HttpServlet {
+public class OfficeServlet extends AbstractHttpServlet {
 	/**
 	 * 办公用品后台处理服务
 	 */
 	private IOfficeService offService = new OfficeService();
  
-	/**
-	 * doGet方法
-	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		this.doPost(request, response);
-	}
 
-	/**
-	 * doPost方法
-	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String methodName = request.getParameter("method");
-		try
-		{
-			Method method = getClass().getDeclaredMethod(methodName, HttpServletRequest.class,HttpServletResponse.class);
-			method.setAccessible(true);
-			method.invoke(this, request,response);
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
-		
-	}
 	/**
 	 * 获得办公用品库存的信息并且将这些信息放在checkInventory.jsp上
 	 * @param request ：请求

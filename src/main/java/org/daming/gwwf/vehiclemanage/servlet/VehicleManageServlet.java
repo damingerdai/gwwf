@@ -19,6 +19,7 @@ import org.daming.gwwf.domain.Employee;
 import org.daming.gwwf.domain.Park;
 import org.daming.gwwf.vehiclemanage.service.IVehicleManageService;
 import org.daming.gwwf.vehiclemanage.service.impl.VehicleManageService;
+import org.daming.gwwf.web.AbstractHttpServlet;
 import org.daming.gwwf.web.Page;
 
 /**
@@ -26,35 +27,12 @@ import org.daming.gwwf.web.Page;
  * @author daming
  *
  */
-public class VehicleManageServlet extends HttpServlet {
+public class VehicleManageServlet extends AbstractHttpServlet {
 
 	/**
 	 * 车辆管理模块的后台服务
 	 */
 	private IVehicleManageService vmService = new VehicleManageService();
-	
-	/**
-	 * doGet方法
-	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		this.doPost(request, response);
-	}
-	/**
-	 * doPost方法
-	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String methodName = request.getParameter("method");
-		try {
-			Method method = getClass().getDeclaredMethod(methodName,
-					HttpServletRequest.class, HttpServletResponse.class);
-			method.setAccessible(true);
-			method.invoke(this, request, response);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	/**
 	 * 获得全部车位信息

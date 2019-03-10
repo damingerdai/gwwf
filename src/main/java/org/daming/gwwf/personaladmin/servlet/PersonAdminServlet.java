@@ -21,6 +21,7 @@ import org.daming.gwwf.office.service.IOfficeService;
 import org.daming.gwwf.office.service.impl.OfficeService;
 import org.daming.gwwf.personaladmin.service.IPersonAdminService;
 import org.daming.gwwf.personaladmin.service.impl.PersonAdminService;
+import org.daming.gwwf.web.AbstractHttpServlet;
 import org.daming.gwwf.web.Page;
 
 /**
@@ -28,36 +29,11 @@ import org.daming.gwwf.web.Page;
  * @author daming
  *
  */
-public class PersonAdminServlet extends HttpServlet {
+public class PersonAdminServlet extends AbstractHttpServlet {
 	/**
 	 * 人事管理后台服务
 	 */
 	private IPersonAdminService pService = new PersonAdminService();
-
-	/**
-	 * doGet方法
-	 */
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		this.doPost(request, response);
-	}
-
-	/**
-	 * doPost方法
-	 */
-	public void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		String methodName = request.getParameter("method");
-		//System.out.println(methodName);
-		try {
-			Method method = getClass().getDeclaredMethod(methodName,
-					HttpServletRequest.class, HttpServletResponse.class);
-			method.setAccessible(true);
-			method.invoke(this, request, response);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
 
 	/**
 	 * 增加新员工
