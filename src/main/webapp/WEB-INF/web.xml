@@ -32,28 +32,28 @@
   <!--</servlet>-->
 
 
-  <filter>
-  	<filter-name>EncordingFilter</filter-name>
-  	<filter-class>org.daming.gwwf.filter.EncordingFilter</filter-class>
-  	<init-param>
-  		<param-name>encoding</param-name>
-  		<param-value>utf-8</param-value>
-  	</init-param>
-  </filter>
-  <filter>
-  	<filter-name>SessionFilter</filter-name>
-  	<filter-class>org.daming.gwwf.filter.SessionFilter</filter-class>
-  </filter>
+  <!--<filter>-->
+  	<!--<filter-name>EncordingFilter</filter-name>-->
+  	<!--<filter-class>org.daming.gwwf.filter.EncordingFilter</filter-class>-->
+  	<!--<init-param>-->
+  		<!--<param-name>encoding</param-name>-->
+  		<!--<param-value>utf-8</param-value>-->
+  	<!--</init-param>-->
+  <!--</filter>-->
+  <!--<filter>-->
+  	<!--<filter-name>SessionFilter</filter-name>-->
+  	<!--<filter-class>org.daming.gwwf.filter.SessionFilter</filter-class>-->
+  <!--</filter>-->
   
 
-  <filter-mapping>
-  	<filter-name>EncordingFilter</filter-name>
-  	<url-pattern>/*</url-pattern>
-  </filter-mapping>
-  <filter-mapping>
-	<filter-name>SessionFilter</filter-name>
-	<url-pattern>/*</url-pattern>
-  </filter-mapping>
+  <!--<filter-mapping>-->
+  	<!--<filter-name>EncordingFilter</filter-name>-->
+  	<!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
+  <!--<filter-mapping>-->
+	<!--<filter-name>SessionFilter</filter-name>-->
+	<!--<url-pattern>/*</url-pattern>-->
+  <!--</filter-mapping>-->
   
 
   <!--<servlet-mapping>-->
