@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,6 +20,7 @@ import org.daming.gwwf.web.AbstractHttpServlet;
  * @author daming
  *
  */
+@WebServlet("/LoginServlet")
 public class LoginServlet extends AbstractHttpServlet {
 	/**
 	 * 登录模块的Service

@@ -6,6 +6,7 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -29,6 +30,7 @@ import org.daming.gwwf.web.Page;
  * @author daming
  *
  */
+@WebServlet("/PersonAdminServlet")
 public class PersonAdminServlet extends AbstractHttpServlet {
 	/**
 	 * 人事管理后台服务
