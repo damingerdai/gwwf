@@ -1,4 +1,7 @@
 package org.daming.gwwf.bean;
+
+import com.google.common.base.MoreObjects;
+
 /**
  * 办公用品
  * @author daming
@@ -83,8 +86,10 @@ public class OfficeStationery {
 	 */
 	@Override
 	public String toString() {
-		return "Office [uname=" + uname + ", unit=" + unit + ", storeNumber="
-				+ storeNumber + "]";
+		return MoreObjects.toStringHelper(this)
+				.add("uname", uname)
+				.add("unit", unit)
+				.add("storeNumber", storeNumber)
+				.toString();
 	}
-	
 }

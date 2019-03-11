@@ -1,5 +1,7 @@
 package org.daming.gwwf.bean;
 
+import com.google.common.base.MoreObjects;
+
 /**
  * 考勤记录
  * @author daming
@@ -143,14 +145,19 @@ public class AttendanceRecord {
 	public AttendanceRecord() {
 		super();
 	}
+
 	/**
 	 * AttendanceRecord的toString方法
 	 */
 	@Override
 	public String toString() {
-		return "AttendanceRecord [empid=" + empid + ", cdate=" + cdate
-				+ ", ontime=" + ontime + ", offtime=" + offtime + ", ctype="
-				+ ctype + ", remark=" + remark + "]";
+		return MoreObjects.toStringHelper(this)
+				.add("empid", empid)
+				.add("cdate", cdate)
+				.add("ontime", ontime)
+				.add("offtime", offtime)
+				.add("ctype", ctype)
+				.add("remark", remark)
+				.toString();
 	}
-	
 }

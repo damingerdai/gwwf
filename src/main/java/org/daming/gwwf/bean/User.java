@@ -1,4 +1,7 @@
 package org.daming.gwwf.bean;
+
+import com.google.common.base.MoreObjects;
+
 /**
  * 用户
  * @author daming
@@ -113,8 +116,11 @@ public class User {
 	 */
 	@Override
 	public String toString() {
-		return "User [empId=" + empId + ", username=" + username
-				+ ", password=" + password + ", privilege=" + privilege + "]";
+		return MoreObjects.toStringHelper(this)
+				.add("empId", empId)
+				.add("username", username)
+				.add("password", password)
+				.add("privilege", privilege)
+				.toString();
 	}
-	
 }

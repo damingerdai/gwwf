@@ -1,4 +1,7 @@
 package org.daming.gwwf.bean;
+
+import com.google.common.base.MoreObjects;
+
 /**
  * 车辆的使用信息
  * @author daming
@@ -124,9 +127,12 @@ public class CarUserInfo {
 	 */
 	@Override
 	public String toString() {
-		return "CarUseInfo [carId=" + carId + ", usageTime_begin="
-				+ usageTime_begin + ", usageTime_end=" + usageTime_end
-				+ ", usage=" + usage + ", userId=" + userId + "]";
+		return MoreObjects.toStringHelper(this)
+				.add("carId", carId)
+				.add("usageTime_begin", usageTime_begin)
+				.add("usageTime_end", usageTime_end)
+				.add("usage", usage)
+				.add("userId", userId)
+				.toString();
 	}
-	
-}	
+}
