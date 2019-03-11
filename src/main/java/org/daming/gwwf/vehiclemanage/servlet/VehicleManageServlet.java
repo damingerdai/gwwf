@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.inject.Guice;
 import net.sf.json.JSONArray;
 import net.sf.json.JsonConfig;
 
@@ -18,6 +19,7 @@ import org.daming.gwwf.bean.User;
 import org.daming.gwwf.domain.Car;
 import org.daming.gwwf.domain.Employee;
 import org.daming.gwwf.domain.Park;
+import org.daming.gwwf.vehiclemanage.VehicleManageModule;
 import org.daming.gwwf.vehiclemanage.service.IVehicleManageService;
 import org.daming.gwwf.vehiclemanage.service.impl.VehicleManageService;
 import org.daming.gwwf.web.AbstractHttpServlet;
@@ -34,7 +36,7 @@ public class VehicleManageServlet extends AbstractHttpServlet {
 	/**
 	 * 车辆管理模块的后台服务
 	 */
-	private IVehicleManageService vmService = new VehicleManageService();
+	private IVehicleManageService vmService = Guice.createInjector(new VehicleManageModule()).getInstance(IVehicleManageService.class);
 
 	/**
 	 * 获得全部车位信息

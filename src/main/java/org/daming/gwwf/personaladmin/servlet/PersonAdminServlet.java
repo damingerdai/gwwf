@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.inject.Guice;
 import net.sf.json.JSONArray;
 import net.sf.json.JsonConfig;
 
@@ -18,8 +19,10 @@ import org.daming.gwwf.bean.AttendanceRecord;
 import org.daming.gwwf.bean.OfficeStationery;
 import org.daming.gwwf.domain.Department;
 import org.daming.gwwf.domain.Employee;
+import org.daming.gwwf.office.OfficeModule;
 import org.daming.gwwf.office.service.IOfficeService;
 import org.daming.gwwf.office.service.impl.OfficeService;
+import org.daming.gwwf.personaladmin.PersonalAdminModule;
 import org.daming.gwwf.personaladmin.service.IPersonAdminService;
 import org.daming.gwwf.personaladmin.service.impl.PersonAdminService;
 import org.daming.gwwf.web.AbstractHttpServlet;
@@ -35,7 +38,8 @@ public class PersonAdminServlet extends AbstractHttpServlet {
 	/**
 	 * 人事管理后台服务
 	 */
-	private IPersonAdminService pService = new PersonAdminService();
+	private IPersonAdminService pService = Guice.createInjector(new PersonalAdminModule()).getInstance(IPersonAdminService.class);
+	private IOfficeService offService = Guice.createInjector(new OfficeModule()).getInstance(IOfficeService.class);
 
 	/**
 	 * 增加新员工
@@ -347,7 +351,6 @@ public class PersonAdminServlet extends AbstractHttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		String depid = request.getParameter("department"); 
 		List<Employee> list = pService.getEmployeeByOffice(depid);
-		IOfficeService offService = new OfficeService();
 		List<OfficeStationery> offList = offService.getOffice();
 		String dname = pService.getDname(depid);
 		request.setAttribute("list", list);

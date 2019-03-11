@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.inject.Guice;
 import org.daming.gwwf.bean.OfficeStationery;
+import org.daming.gwwf.office.OfficeModule;
 import org.daming.gwwf.office.service.IOfficeService;
 import org.daming.gwwf.office.service.impl.OfficeService;
 import org.daming.gwwf.web.AbstractHttpServlet;
@@ -26,7 +28,7 @@ public class OfficeServlet extends AbstractHttpServlet {
 	/**
 	 * 办公用品后台处理服务
 	 */
-	private IOfficeService offService = new OfficeService();
+	private IOfficeService offService = Guice.createInjector(new OfficeModule()).getInstance(IOfficeService.class);
  
 
 	/**

@@ -3,6 +3,7 @@ package org.daming.gwwf.office.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.google.inject.Inject;
 import org.daming.gwwf.bean.OfficeStationery;
 import org.daming.gwwf.office.dao.IOfficeDAO;
 import org.daming.gwwf.office.dao.impl.OfficeDAO;
@@ -14,7 +15,7 @@ import org.daming.gwwf.office.service.IOfficeService;
  *
  */
 public class OfficeService implements IOfficeService {
-	private IOfficeDAO offDAO = new OfficeDAO();
+	private IOfficeDAO offDAO ;
 	@Override
 	public List<OfficeStationery> getOffice() {
 		return offDAO.getOffice();
@@ -53,7 +54,10 @@ public class OfficeService implements IOfficeService {
 		}
 		offDAO.updateOfficeStationery(updateList, insertList);
 	}
-	 
-	 
 
+	@Inject
+	public OfficeService(IOfficeDAO offDAO) {
+		super();
+		this.offDAO = offDAO;
+	}
 }

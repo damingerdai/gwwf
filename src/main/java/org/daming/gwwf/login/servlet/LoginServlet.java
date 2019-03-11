@@ -10,7 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.google.inject.Guice;
 import org.daming.gwwf.bean.User;
+import org.daming.gwwf.login.LoginModule;
 import org.daming.gwwf.login.service.ILoginService;
 import org.daming.gwwf.login.service.impl.LoginService;
 import org.daming.gwwf.web.AbstractHttpServlet;
@@ -25,7 +27,7 @@ public class LoginServlet extends AbstractHttpServlet {
 	/**
 	 * 登录模块的Service
 	 */
-	private ILoginService loginService = new LoginService();
+	private ILoginService loginService =  Guice.createInjector(new LoginModule()).getInstance(ILoginService.class);
 
 	/**
 	 * 用于判断用户输入的员工编号和密码是否正确

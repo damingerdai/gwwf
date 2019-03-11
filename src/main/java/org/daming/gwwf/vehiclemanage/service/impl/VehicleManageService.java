@@ -2,6 +2,7 @@ package org.daming.gwwf.vehiclemanage.service.impl;
 
 import java.util.List;
 
+import com.google.inject.Inject;
 import org.daming.gwwf.bean.CarUserInfo;
 import org.daming.gwwf.bean.User;
 import org.daming.gwwf.domain.Car;
@@ -22,7 +23,8 @@ public class VehicleManageService implements IVehicleManageService {
 	/**
 	 * 车辆管理DAO操作
 	 */
-	private IVehicleManageDAO vmDAO = new VehicleManageDAO();
+	private IVehicleManageDAO vmDAO;
+
 	@Override
 	public List<Park> getParkingInfo() {
 		
@@ -102,5 +104,10 @@ public class VehicleManageService implements IVehicleManageService {
 		 vmDAO.updateParking(park);
 		
 	}
-	
+
+	@Inject
+	public VehicleManageService(IVehicleManageDAO vmDAO) {
+		super();
+		this.vmDAO = vmDAO;
+	}
 }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.google.inject.Inject;
 import org.daming.gwwf.bean.AttendanceRecord;
 import org.daming.gwwf.domain.Department;
 import org.daming.gwwf.domain.Employee;
@@ -19,7 +20,8 @@ import org.daming.gwwf.web.Page;
  * 
  */
 public class PersonAdminService implements IPersonAdminService {
-	private IPersonAdminDAO pDAO = new PersonAdminDAO();
+
+	private IPersonAdminDAO pDAO;
 
 	@Override
 	public List<String> getEmpidByEmpidPart(String empidPart) {
@@ -272,5 +274,9 @@ public class PersonAdminService implements IPersonAdminService {
 		return dname;
 	}
 
- 
+	@Inject
+	public PersonAdminService(IPersonAdminDAO pDAO) {
+		super();
+		this.pDAO = pDAO;
+	}
 }

@@ -1,5 +1,6 @@
 package org.daming.gwwf.login.service.impl;
 
+import com.google.inject.Inject;
 import org.daming.gwwf.bean.User;
 import org.daming.gwwf.domain.Employee;
 import org.daming.gwwf.login.dao.ILoginDAO;
@@ -10,7 +11,7 @@ public class LoginService implements ILoginService {
 	/**
 	 * 登录模块的DAO操作
 	 */
-	private ILoginDAO eDAO = new LoginDAO();
+	private ILoginDAO eDAO;
 
 	@Override
 	public String checkUser(User user) {
@@ -45,6 +46,12 @@ public class LoginService implements ILoginService {
 	public String searchDepId(String empid) {
 		 
 		return eDAO.searchDepId(empid);
+	}
+
+	@Inject
+	public LoginService(ILoginDAO eDAO) {
+		super();
+		this.eDAO = eDAO;
 	}
 
 }

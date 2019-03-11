@@ -58,6 +58,17 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+        <!-- Guice扩展插件：多值绑定 -->
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-multibindings</artifactId>
+            <version>4.2.2</version>
+        </dependency>
 
         <!-- Test scoped dependencies -->
         <dependency>
